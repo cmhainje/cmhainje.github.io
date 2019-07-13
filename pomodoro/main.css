@@ -1,0 +1,39 @@
+body {
+  font-family: 'Overpass', sans-serif;
+}
+
+p {
+  font-size: 16pt;
+}
+
+.btn-xlg {
+    padding: 18px 28px 10px;
+    font-size: 2rem;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+.btn-lg {
+  padding-bottom: 5px; 
+}
+
+#timer {
+  color: #000;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 2rem;
+}
+
+.jumbotron {
+  padding-bottom: 35px;
+}
+
+#taskMarker {
+  border-style: solid;
+  border-radius: 15px;
+}
+
+#tasks {
+
+}

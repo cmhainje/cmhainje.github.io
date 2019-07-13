@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Bootstrap -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- My meta -->
+  <link href="main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Overpass|Overpass+Mono&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+
+  <title>Pomodoro Timer</title>
+</head>
+
+<body>
+<div class="container pt-5">
+  <h1 class="display-2">Pomodoro Timer</h1>
+  <p>
+    Select a time option below.
+  </p>
+</div>
+
+<div class="container">
+  <div class="jumbotron text-center">
+    <button type="button" class="btn btn-dark btn-xlg" onclick="setTime(25)">25:00</button>
+    <button type="button" class="btn btn-dark btn-xlg" onclick="setTime(5)">5:00</button>
+    <button type="button" class="btn btn-dark btn-xlg" onclick="setTime(15)">15:00</button>
+    <button type="button" class="btn btn-dark btn-xlg" onclick="setTime(0)">Clear</button>
+    <br> <br>
+    <span id="timer">00:00</span>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Track your progress</h1>
+  <p>
+    Click this when you've completed a 25 minute work session.&ensp;
+    <button type="button" class="btn btn-dark btn-lg" onclick="taskComplete()">✓</button>
+    <button type="button" class="btn btn-dark btn-lg" onclick="taskClear()">Clear</button>
+    <br> <br>
+    <span class="text-center" id="tasks"></span>
+  </p>
+</div>
+
+</body>
+</html>
