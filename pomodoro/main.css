@@ -6,6 +6,10 @@ p {
   font-size: 16pt;
 }
 
+li {
+  font-size: 14pt;
+}
+
 .btn-xlg {
     padding: 18px 28px 10px;
     font-size: 2rem;
@@ -16,7 +20,7 @@ p {
 }
 
 .btn-lg {
-  padding-bottom: 5px; 
+  padding-bottom: 5px;
 }
 
 #timer {
