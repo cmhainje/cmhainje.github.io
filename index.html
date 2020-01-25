@@ -1,294 +1,185 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-  <!-- Bootstrap Req's -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-  <!-- My meta -->
-  <title>Home | Connor Hainje</title>
+  <link rel="stylesheet" href="css/master.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Home | Connor Hainje</title>
 </head>
 
-<body class="bg-dark">
+<body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!-- Brand logo -->
-  <a class="navbar-brand" href="#">
-    <img src="resources/brand_image.jpg" width="32" height="32" alt="">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <!-- Nav links -->
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <ul class="navbar-nav pb-auto mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="portfolio.html">Portfolio</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Something else?</a>
-    </li>
-  </ul>
+<div class="nav black">
+  <div class="navbrand">
+    <a href="#">Connor Hainje</a>
   </div>
-
-  <!-- Media links -->
-  <ul class="navbar-nav justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link" href="resources/resume.pdf">Résumé</a>
-    </li>
-  </ul>
-
-  <ul class="navbar-nav justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">
-        <img src="resources/github_mark/GitHub-Mark-64px.png" width="32" height="32" alt="GitHub">
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="https://www.linkedin.com/in/connor-hainje-0985b7177">
-        <img src="resources/linkedin_mark/LI-In-Bug.png" width="38" height="32" alt="LinkedIn">
-      </a>
-    </li>
-  </ul>
-</nav>
-
-
-<!-- Name jumbotron -->
-<div class="jumbotron jumbotron-fluid bg-secondary mb-0">
-  <div class="container text-light">
-    <h1 class="display-1">Connor Hainje</h1>
-    <p class="lead">Notice: this website is still under construction. Changes incoming.</p>
+  <div class="navpages">
+    <a class="active" href="#">Home</a>
+    &emsp;
+    <a href="portfolio.html">Portfolio</a>
+    &emsp;
+    <a href="resources/resume.pdf">Resume</a>
   </div>
 </div>
 
-
-<!-- Biography -->
-<div class="container-fluid p-5 bg-light">
-  <div class="container text-dark">
-    <h1>Biography</h1>
-    <p>
-      I'm a rising junior at Princeton University, majoring in physics
-      while also studying mathematics, computer science, and French.
-    </p>
-  </div>
+<div class="container white" id="bio">
+  <h1>Hi, I'm Connor.</h1>
+  <hr>
+  <p>
+    I'm a student at Princeton University studying physics, mathematics, computer science, and French. In each of these fields, I have a bit of experience detailed here on the website. You can read more about this
+    <a href="#exp">below</a>. If you want to actually see my work, check out the <a href="portfolio.html">portfolio</a> section of the site.
+  </p>
 </div>
 
+<div class="container black" id="exp">
+  <h2>Experience</h2>
+  <hr>
+  <p>
+    My background can be divided rather cleanly into three categories: research, work, or class.
+  </p>
 
-<!-- Experience section -->
-<div class="container-fluid p-5 bg-dark">
-  <div class="container text-light">
-    <h1>Experience</h1>
+  <h4>In the laboratory</h4>
+  <details>
+    <summary><b>Junior Independent Work</b> at <i>Princeton University Department of Physics</i></summary>
+    <div style="padding-left: 1em">
+      <details>
+        <summary>Fall semester</summary>
+        <p>Description of fall semester work.</p>
+      </details>
+      <details>
+        <summary>Spring semester</summary>
+        <p>Description of spring semester work.</p>
+      </details>
+    </div>
+    <br>
+  </details>
+  <details>
+    <summary><b>SULI DOE and Technical Intern</b> at <i>Pacific Northwest National Laboratory</i></summary>
     <p>
-      If you'd like a PDF version of my resume, including what you find below as well as skills and education, check it
-      out <a href="resources/resume.pdf">here</a>.
+      Summer 2019 <br>
+      At PNNL, I worked as a member of the Belle II collaboration at PNNL under mentor Jan Strube. My work was primarily involved with better understanding the functioning of the Belle II experiment's TOP detector. In the beginning, this meant working to understand simulated collision events to model the detector's response given different particle types, incident angles and positions, and momenta. The core of my work then moved to developing a novel, data-driven likelihood model for determining the likelihood that an incident particle is of a given particle type. This meant large-scale collection of simulation data and the development of optimized calculation techniques. At the end of my ten-week internship through the Department of Energy's SULI program, my team kept me on as a technical intern for additional month to wrap up my research and write a report for internal review by the Belle II experiment. If you'd like to see more, check out my write-up <a href="#">here</a>.
     </p>
-
-    <ul class="list-group text-dark">
-      <li class="list-group-item">
-        <h4>Relevant Coursework</h4>
-        <details open>
-          <summary><b>Physics</b></summary>
-          <ul>
-            <li>PHY 105 - Advanced Physics: Mechanics (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=005130&term=1182">description</a>)</li>
-            <li>PHY 106 - Advanced Physics: Electromagnetism (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=005131&term=1184">description</a>)</li>
-            <li>PHY 205 - Classical Mechanics (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=005146&term=1192">description</a>)</li>
-            <li>PHY 208 - Principles of Quantum Mechanics (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=005148&term=1194">description</a>)</li>
-            <li>PHY 235 - Introduction to Research in Physics (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=014511&term=1194">description</a>, or see my <a href="#">report</a> on it)</li>
-          </ul>
-        </details>
-        <details>
-          <summary><b>Mathematics</b></summary>
-          <ul>
-            <li>MAT 204 - Advanced Linear Algebra with Applications (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=004153&term=1184">description</a>)</li>
-            <li>MAT 203 - Advanced Vector Calculus (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=004151&term=1192">description</a>)</li>
-            <li>MAT 330 - Complex Analysis with Applications (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=004180&term=1194">description</a>)</li>
-          </ul>
-        </details>
-        <details>
-          <summary><b>Computer Science</b></summary>
-          <ul>
-            <li>COS 226 - Algorithms and Data Structures (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=002054&term=1192">description</a>)</li>
-            <li>COS 217 - Introduction to Programming Systems (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=002053&term=1194">description</a>)</li>
-          </ul>
-          <p class="pb-0 mb-0">Also worth noting: successful placement out of COS 126, the introductory programming course required for both 226 and 217.</p>
-        </details>
-        <details>
-          <summary><b>French</b></summary>
-          <ul>
-            <li>FRE 101 - Beginner's French I (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=002845&term=1182">description</a>)</li>
-            <li>FRE 1027 - Intensive Intermediate and Advanced French (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=002848&term=1184">description</a>)</li>
-            <li>FRE 207 - Studies in French Language and Style (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=002859&term=1192">description</a>)</li>
-            <li>FRE 222 - The Making of Modern France (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=008596&term=1194">description</a>)</li>
-          </ul>
-        </details>
+  </details>
+  <details>
+    <summary><b>Research Assistant</b> at <i>Purdue University Metastable Fluids Research Laboratory</i></summary>
+    <p>
+      May 2015 - May 2017 <br>
+      At MFRL, I worked primarily on nuclear detection physics. The laboratory specializes in neutron detectors called TMFDs, or Tensioned Metastable Fluid Detectors. These detectors work by putting fluids into a metastable state, in which interaction with a neutron with enough energy would directly cause the liquid to change to gas. My work was primarily with helping to build a spectroscopic model for these detectors, from first physics principles as best as possible. The physics surrounding tensioned fluids is not super well understood, so much of the work required building our model from the ground up. In pursuit of this aim, I
+    </p>
+    <ul>
+      <li>Helped to develop a model for spectroscopy methods</li>
+      <li>Wrote MCNP decks for nuclear simulation to refine our model</li>
+      <li>Designed and constructed an experimental apparatus, by
+        <ul>
+          <li>Designing and constructing constant-temperature chamber</li>
+          <li>Programming an Arduino microcontroller for temperature regulation</li>
+        </ul>
       </li>
-      <li class="list-group-item">
-        <h4>Research</h4>
-        <details open>
-          <summary><b>SULI DOE Intern</b> at <i>Pacific Northwest National Laboratory</i></summary>
-          <p>
-            Summer 2019 <br>
-            Note: this is currently in progress! Updates to come. <br>
-            At PNNL, I worked as a member of the Belle II collaboration. Belle II is an electron/proton collider located at
-            KEK in Japan. My work was primarily involved with understanding the functioning of a detector in the collider,
-            known as the TOP detector. In pursuit of this aim, I worked to understand experimental data as well as simulated
-            collision events to model the detector's response to different particle types, incident from varying angles and
-            with varying momenta. Part of this work involved creating an analytic likelihood model of the detector; i.e.
-            determining how to translate particle type, position, and momentum into specific likelihoods of detections in
-            various parts of the detector. Another part of this work involved working to create a machine learning model for
-            optimizing our analytic model of the detector's response.
-          </p>
-        </details>
-        <details>
-          <summary><b>Research Assistant</b> at <i>Purdue University Metastable Fluids Research Laboratory</i></summary>
-          <p>
-            May 2015 - May 2017 <br>
-            At MFRL, I worked primarily on nuclear detection physics. The laboratory specializes in neutron detectors they call
-            TMFDs, or Tensioned Metastable Fluid Detectors. These detectors work by putting fluids into a metastable state, in
-            which interaction with a neutron with enough energy would directly cause the liquid to change to gas. My work was
-            primarily with helping to build a spectroscopic model for these detectors, from first physics principles as best as
-            possible. The physics surrounding tensioned fluids is not super well understood, so much of the work required building
-            our model from the ground up. In pursuit of this aim, I
-          </p>
-          <ul>
-            <li>Helped to develop a model for spectroscopy methods</li>
-            <li>Wrote MCNP decks for nuclear simulation to refine our model</li>
-            <li>Designed and constructed an experimental apparatus, by
-              <ul>
-                <li>Designing and constructing constant-temperature chamber</li>
-                <li>Programming an Arduino microcontroller for temperature regulation</li>
-              </ul>
-            </li>
-            <li>Performed precise scientific experimentation</li>
-            <li>Wrote analysis scripts to test our model with MCNP output as well as experimental data</li>
-          </ul>
-        </details>
-      </li>
-      <li class="list-group-item">
-        <h4>Work</h4>
-        <details open>
-          <summary><b>Student Supervisor</b> at <i>Princeton University Video Services</i></summary>
-          <p>
-            June 2019 - present <br>
-            As student supervisor, my duties include all of the duties listed below for the student worker, as well as the added
-            responsibilities of...
-          </p>
-          <ul>
-            <li>Helping train new employees</li>
-            <li>Managing the Video Services' social media accounts</li>
-            <li>Managing the scheduling process</li>
-            <li>Being available to aid Video Services workers at all times on evenings and weekends</li>
-          </ul>
-          <br>
-        </details>
-        <details open>
-          <summary><b>COS 226 Grader</b> at <i>Princeton University Department of Computer Science</i></summary>
-          <p>
-            January 2019 - present <br>
-            As a grader, my duties are simple: grade the programming assignments of students in the Data Structures
-            and Algorithms course.
-          </p>
-        </details>
-        <details>
-          <summary><b>Student Worker</b> at <i>Princeton University Video Services</i></summary>
-          <p>
-            September 2017 - May 2019 <br>
-            As a student worker, my duties include...
-          </p>
-          <ul>
-            <li>Working with circulation software to check in/out videos as well as to manage Princeton's massive video library</li>
-            <li>Labeling/shelving videos</li>
-            <li>Assisting with Video Services projects (including preparing materials about the library's available services)</li>
-            <li>Providing technical assistance to patrons using video and other equipment in the Video Services space</li>
-          </ul>
-        </details>
-      </li>
+      <li>Performed precise scientific experimentation</li>
+      <li>Wrote analysis scripts to test our model with MCNP output as well as experimental data</li>
     </ul>
-  </div>
-</div>
+  </details>
 
-
-<!-- Portfolio -->
-<div class="container-fluid p-5 bg-light">
-  <div class="container text-dark">
-    <h1>Portfolio</h1>
-    <p>For more details about my past work, see my <a href="portfolio.html">Portfolio</a> page. It expands more on what you see below.</p>
-    <ul class="list-group">
-      <li class="list-group-item">
-        <h4>Research</h4>
-        <details open>
-          <summary>Work at PNNL</summary>
-          <ul>
-            <li><a href="#">Paper</a></li>
-            <li><a href="#">Poster</a></li>
-          </ul>
-        </details>
-        <details>
-          <summary>Mock research in PHY 235</summary>
-          <ul>
-            <li><a href="resources/phy235_research/paper.pdf">Paper</a></li>
-            <li><a href="#">Presentation</a></li>
-          </ul>
-        </details>
-        <details>
-          <summary>Work at Purdue MFRL</summary>
-          <ul>
-            <li><a href="resources/mfrl_research/abstract.pdf">Abstract</a></li>
-            <li><a href="resources/mfrl_research/poster.pdf">Poster</a></li>
-          </ul>
-        </details>
-      </li>
-      <li class="list-group-item">
-        <h4>Web</h4>
-        <details open>
-          <summary>This website</summary>
-          <p>
-            This website is an example of my work! My most up-to-date website, this serves as a
-            representation of my front-end development skills. I don't have a ton of experience,
-            and I have no formal training; however, everything here was coded by hand by me.
-          </p>
-        </details>
-        <details>
-          <summary>Hainje Home Solutions</summary>
-          <p>
-            This was my first crack at web development. Built entirely from HTML/CSS/Bootstrap,
-            and deployed with GitHub Pages, I taught myself completely from scratch to help build
-            my dad's business a website. You can find it <a href="https://www.hainjehomesolutions.com">here</a>.
-          </p>
-        </details>
-      </li>
+  <h4>In the workplace</h4>
+  <details>
+    <summary><b>Student Supervisor</b> at <i>Princeton University Video Services</i></summary>
+    <p>
+      June 2019 - present <br>
+      As student supervisor, my duties include all of the duties listed below for the student worker, as well as the added responsibilities of...
+    </p>
+    <ul>
+      <li>Helping train new employees</li>
+      <li>Managing the Video Services' social media accounts</li>
+      <li>Managing the scheduling process</li>
+      <li>Being available to aid Video Services workers at all times on evenings and weekends</li>
     </ul>
-  </div>
+    <br>
+  </details>
+  <details>
+    <summary><b>COS 226 Grading Leader</b> at <i>Princeton University Department of Computer Science</i></summary>
+    <p>
+      December 2019 - present <br>
+      As a grading leader, I grade students' programming assignments as well as check other student graders' work to ensure that the rubric is well-understood and consistently enforced.
+    </p>
+  </details>
+  <details>
+    <summary><b>COS 226 Grader</b> at <i>Princeton University Department of Computer Science</i></summary>
+    <p>
+      January 2019 - December 2019 <br>
+      As a grader, my duties are simple: grade the programming assignments of students in the Data Structures and Algorithms course.
+    </p>
+  </details>
+  <details>
+    <summary><b>Student Worker</b> at <i>Princeton University Video Services</i></summary>
+    <p>
+      September 2017 - May 2019 <br>
+      As a student worker, my duties include...
+    </p>
+    <ul>
+      <li>Working with circulation software to check in/out videos as well as to manage Princeton's massive video library</li>
+      <li>Labeling/shelving videos</li>
+      <li>Assisting with Video Services projects (including preparing materials about the library's available services)</li>
+      <li>Providing technical assistance to patrons using video and other equipment in the Video Services space</li>
+    </ul>
+  </details>
+
+  <h4>In the classroom</h4>
+  <details>
+    <summary><b>Physics</b></summary>
+    <ul>
+      <li>PHY 105 - Advanced Physics: Mechanics (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=005130&term=1182">description</a>)</li>
+      <li>PHY 106 - Advanced Physics: Electromagnetism (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=005131&term=1184">description</a>)</li>
+      <li>PHY 205 - Classical Mechanics (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=005146&term=1192">description</a>)</li>
+      <li>PHY 208 - Principles of Quantum Mechanics (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=005148&term=1194">description</a>)</li>
+      <li>PHY 235 - Introduction to Research in Physics (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=014511&term=1194">description</a>, or see my <a href="#">report</a> on it)</li>
+      <li>PHY 301 - Thermal Physics (<a href="https://registrar.princeton.edu/course-offerings/course-details?term=1202&courseid=005154">description</a>)</li>
+      <li>PHY 305 - Introduction to the Quantum Theory (<a href="https://registrar.princeton.edu/course-offerings/course-details?term=1202&courseid=005158">description</a>)</li>
+    </ul>
+  </details>
+  <details>
+    <summary><b>Mathematics</b></summary>
+    <ul>
+      <li>MAT 203 - Advanced Vector Calculus (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=004151&term=1192">description</a>)</li>
+      <li>MAT 204 - Advanced Linear Algebra with Applications (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=004153&term=1184">description</a>)</li>
+      <li>MAT 330 - Complex Analysis with Applications (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=004180&term=1194">description</a>)</li>
+      <li>MAT 340 - Applied Algebra (<a href="https://registrar.princeton.edu/course-offerings/course-details?term=1202&courseid=012830">description</a>)</li>
+    </ul>
+  </details>
+  <details>
+    <summary><b>Computer Science</b></summary>
+    <ul>
+      <li>COS 217 - Introduction to Programming Systems (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=002053&term=1194">description</a>)</li>
+      <li>COS 226 - Algorithms and Data Structures (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=002054&term=1192">description</a>)</li>
+      <li>COS 484 - Natural Language Processing (<a href="https://registrar.princeton.edu/course-offerings/course-details?term=1202&courseid=015210">description</a>)</li>
+      <li>Also worth noting: successful placement out of COS 126, the introductory programming course required for both 226 and 217.</li>
+    </ul>
+  </details>
+  <details>
+    <summary><b>French</b></summary>
+    <ul>
+      <li>FRE 101 - Beginner's French I (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=002845&term=1182">description</a>)</li>
+      <li>FRE 1027 - Intensive Intermediate and Advanced French (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=002848&term=1184">description</a>)</li>
+      <li>FRE 207 - Studies in French Language and Style (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=002859&term=1192">description</a>)</li>
+      <li>FRE 221 - The Rise of France (<a href="https://registrar.princeton.edu/course-offerings/course-details?term=1202&courseid=008595">description</a>)</li>
+      <li>FRE 222 - The Making of Modern France (<a href="https://registrar.princeton.edu/course-offerings/course-details?courseid=008596&term=1194">description</a>)</li>
+    </ul>
+  </details>
+
 </div>
 
-
-<!-- Contact -->
-<div class="container-fluid p-5 bg-dark">
-  <div class="container text-light">
-    <h1>Contact</h1>
-    <p>
-      Phone: (765) 543-3568 <br>
-      Email: cmhainje@gmail.com
-    </p>
-  </div>
+<div class="container white" id="contact">
+  <h2>Contact</h2>
+  <hr>
+  <p>
+    If you want to contact me, please reach out to
+    <a href="mailto:chainje@princeton.edu">chainje@princeton.edu</a> or
+    <a href="mailto:cmhainje@gmail.com">cmhainje@gmail.com</a>.
+    I check both regularly, so please feel free to use either.
+  </p>
 </div>
 
-
-<!-- Footer -->
-<footer class="bg-dark">
-  <div class="container text-light text-center">
-    <p>
-      &copy; 2019, Connor Hainje &nbsp;&nbsp;|&nbsp;&nbsp;
-      Last updated: 2019/06/15
-    </p>
-  </div>
+<footer class="black">
+  <p> &copy; 2020 Connor Hainje. </p>
 </footer>
 
 </body>
