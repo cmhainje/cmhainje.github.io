@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/raster-unminified.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+
+  <r-grid columns="6">
+    <r-cell span-s=row>{% include navigation.html %}</r-cell>
+    <r-cell span=4 span-s=row>
+      <div class="content">{{ content }}</div>
+    </r-cell>
+  </r-grid>
+
+  </body>
+</html>

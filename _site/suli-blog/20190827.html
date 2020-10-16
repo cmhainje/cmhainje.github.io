@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Aug 27 - Tuesday</title>
+</head>
+<body>
+
+<a href="index.html">Index of blog posts</a>
+
+<h1>Aug 27 - Tuesday</h1>
+
+<h2>Off-by-one studies</h2>
+<p>
+  Today I continued the off-by-one studies that I began last Monday. However, with a fresh Jupyter kernel and the same code from last time, the plots for the <code>ch-1</code> mapping improved substantially. In fact, it has the best performance by far. All the plots can be found <a href="resources/20190827/off-by-ones/">here</a>. Further, for the ~1700 tracks that I calculate likelihoods for, the percentage of tracks with pion likelihood greater than kaon likelihood for each of the mappings is...
+</p>
+<table>
+  <tr><th>BASF2</th>              <th>3.48%</th></tr>
+  <tr><th><code>ch-1</code></th>  <th>8.21%</th></tr>
+  <tr><th><code>ch</code></th>    <th>8.90%</th></tr>
+  <tr><th><code>ch+1</code></th>  <th>11.35%</th></tr>
+  <tr><th><code>ch+63</code></th> <th>17.34%</th></tr>
+</table>
+
+<h2>Offline analytic likelihood performance</h2>
+<p>
+  Now that we seem to have fixed whatever was broken with the offline likelihoods, let's look at the performance of the likelihoods. First, the original plots:
+</p>
+
+<img src="resources/20190827/online_vs_offline-Lpi.png" alt="">
+<img src="resources/20190827/online_vs_offline-LK.png" alt="">
+<img src="resources/20190827/online_vs_offline-Ldelta.png" alt="">
+<img src="resources/20190827/online_vs_offline-Ldelta_hist.png" alt="">
+
+<p>
+  Now another histogram. This depicts the distribution of BASF2 likelihood minus the analytic likelihood for the particles.
+</p>
+
+<img src="resources/20190827/online_vs_offline-hist.png" alt="">
+
+<p>
+  With this, we see that the pion distribution is shifted a little to the right of the kaon distribution. This is interesting, because this means that the BASF2 likelihoods are greater than our offline likelihoods by a greater amount for pions than for kaons. I suggested that perhaps this is caused by our Poisson term, as we are possibly using different numbers for the expected number of digits than the analytic likelihood predicts. As such, I've plotted histograms of the number of signal photons expected for the pion and kaon hypotheses for both the BASF2 reported numbers and the offline numbers we calculate.
+</p>
+
+<img src="resources/20190827/online_vs_offline-nphotpi_hist.png" alt="">
+<img src="resources/20190827/online_vs_offline-nphotK_hist.png" alt="">
+<img src="resources/20190827/online_vs_offline-nphotdiff_hist.png" alt="">
+
+<p>
+  From these plots, we see that the offline likelihood underpredicts the number of signal photons (compared to the BASF2 number) almost always. As such, we'll adjust the number of photons in our background (currently set to 1) by adding the 2-3 that the signal distributions differ by, since we're typically off by a constant amount and the only number that actually goes into the likelihood calculation is <i>N<sub>h</sub></i> + <i>N<sub>B</sub></i>.
+</p>
+
+</body>
+</html>

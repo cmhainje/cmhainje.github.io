@@ -1,0 +1,29 @@
+.current { 
+  // font-weight: 700; 
+}
+
+.brand { 
+  font-weight: 700; 
+  margin-bottom: 1em;
+}
+
+nav {
+    padding-bottom: 50px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+            font-size: 20px;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    p { margin: 0; }
+}

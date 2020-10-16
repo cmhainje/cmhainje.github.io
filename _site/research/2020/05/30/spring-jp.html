@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Junior Paper - SPIDER</title>
+    <link rel="stylesheet" href="/assets/css/raster-unminified.css">
+    <link rel="stylesheet" href="/assets/css/post.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+
+  <body>
+
+  <r-grid columns="6">
+    <r-cell span-s=row><nav>
+  <ul>
+    <li class="brand">connor<br>hainje</li>
+     
+      <li>
+        
+        <a href="/" class="current"><p>home</p></a>
+        
+      </li>
+     
+      <li>
+        
+        <a href="/about" class="current"><p>about</p></a>
+        
+      </li>
+     
+      <li>
+        
+        <a href="/projects" class="current"><p>projects</p></a>
+        
+      </li>
+     
+      <li>
+        
+        <a href="/research" class="current"><p>research*</p></a>
+        
+      </li>
+     
+      <li>
+        
+        <a href="/notes" class="current"><p>notes</p></a>
+        
+      </li>
+    
+  </ul>
+</nav>
+</r-cell>
+    <r-cell span=4 span-s=row>
+      <div class="content">
+        <h1>Junior Paper - SPIDER</h1>
+        <p><i>Spring 2020</i></p>
+        <p><a href="/assets/resources/spring-jp.pdf">See the paper.</a></p>
+
+<p>My second junior paper, performed under the advisory of Prof. Bill Jones. For
+this research, I worked as a member of the <a href="https://spider.princeton.edu">SPIDER experiment</a>.
+SPIDER is an experiment designed to measure the polarized CMB with unprecedented
+resolution.  The SPIDER apparatus is a balloon-borne polarimeter which underwent
+data-taking flights back in 2015.  My work was largely concerned with analyzing
+the data polarized CMB maps taken during these flights. In particular, I was
+tasked with developing a method for quantifying the degree to which signals from
+galactic dust remained present in the SPIDER maps after cleaning them.</p>
+
+<p>The presence of galactic dust in maps of the polarized CMB is a problem that
+plagues most experiments like SPIDER, so it is necessary to develop
+sophisticated methods to remove these signals from CMB maps. Galactic dust
+orients itself with local magnetic field structures, which causes its thermal
+radiation and starlight re-radiation to be polarized in preferred directions.
+This radiation tends to be at similar wavelengths to CMB radiation, so we need
+to clean CMB maps of this radiation in order to be sure that any patterns we see
+are definitively not from galactic dust.</p>
+
+<p>Researchers Clark and Hensley recently (2019) published a paper wherein they
+describe correlations between galactic HI structures and galactic dust,
+presenting a new method by which one can probe (and quantify) the degree to
+which a CMB map contains dusty signals. Most of my research involved trying to
+reproduce their work in which they calculated two correlation metrics between HI
+maps and the Planck 353 GHz map (a map which is known to be dominated by dusty
+signals, and thus a good approximation of a plain map of galactic dust).</p>
+
+<p>The end goal of this research was to complete the reproduction of Clark and
+Hensley’s correlation calculations, and then to use the correlation
+calculating-pipeline to calculate the same correlations between the cleaned
+SPIDER maps and galactic HI maps as an independent measure of the presence of
+dusty signals in the cleaned maps. Unfortunately, I was never able to fully
+reproduce Clark and Hensley’s calculations, in large part simply because we ran
+out of time.</p>
+
+<p>My work still provided me with a good amount of new knowledge, though, and this
+is all summarized in the paper. Further, my inability to reproduce the C&amp;H
+result is important in its own right: if other researchers similarly try and
+fail to reproduce the plot, then there is potentially an error in Clark and
+Hensley’s work that needs to be corrected.</p>
+
+
+      </div>
+    </r-cell>
+  </r-grid>
+
+  </body>
+</html>

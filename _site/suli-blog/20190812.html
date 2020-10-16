@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Aug 12 - Monday</title>
+</head>
+<body>
+
+<a href="index.html">Index of blog posts</a>
+
+<h1>August 12 - Monday</h1>
+<p>
+  Today was my first day working from home! Some time was taken to set up my computing environment, but that was overall a smooth process. Unfortunately, however, I cannot connect to Confluence from home, even with my OneKey, so here are my blog posts. :)
+  <br>
+  Tomorrow I'm going to get started on documentation of the blob region, but I felt I really needed to wrap up this foray into the extended likelihoods before I began. Here's my plan for the coming days (as I discussed with Jan last Friday).
+  <br>
+  <ul>
+    <li>The Blob</li>
+    <ul>
+      <li>Document its properties</li>
+      <ul>
+        <li>Decreased likelihoods for tracks incident in a given region</li>
+        <li>Related to number of photons produced and detected in that region</li>
+        <li>Fraction direct in the region is flat, gradient in surrounding region</li>
+        <ul>
+          <li>(Before doing anything else, need to remake the fraction direct plot with the cleaned datasets -- want to make sure that the feature does not disappear with the cuts we make on the datasets)</li>
+        </ul>
+        <li>Conclude that a combination of track and Cherenkov angle is helping increase photons' ability to successfully make it to the PMTs (right?)</li>
+      </ul>
+    </ul>
+    <li>Analytic likelihoods</li>
+    <ul>
+      <li>Implement TTS and a flat backgrounds to the analytic PDFs; see if we can make an offline analytic calculation</li>
+      <li>Compare the BASF2 and offline analytic calculations (make log L_pi - log L_K distribution plot)</li>
+      <li>Characterize performance for 2 GeV particles as a function of track position</li>
+      <ul>
+        <li>All work is basically done; need to put all together in a coherent way</li>
+      </ul>
+    </ul>
+  </ul>
+  The goal is to get the above done first. With the time that remains, we do the following:
+  <ul>
+    <li>Monte Carlo likelihoods</li>
+    <ul>
+      <li>Binning studies in x, z</li>
+      <li>Binning studies in t</li>
+      <li>(Binning studies in momentum)</li>
+      <li>(Compare BASF2 analytic with MC with log L_pi - log L_K distribution plots)</li>
+    </ul>
+  </ul>
+</p>
+
+<h2>Extended Likelihoods Analysis</h2>
+<p>
+  I worked on my extended likelihoods analysis notebook. Last week, I ran my calculations script to calculate the likelihood distributions for pions and kaons from random-direction data. Something failed, however, as the kaon likelihoods that were returned were simply zero-filled arrays. Interestingly, though, my analysis notebook did not reflect this, and showed perfectly reasonable likelihoods being calculated from this array. This makes absolutely no sense, though, because there was no data in the array it should have been using.
+  <br>
+  To fix this, I basically just rebuilt the notebook from scratch. Re-using as little code as possible, I remade all of the helper classes and analysis methods, and now we are getting more reasonable results. Further, I tested the notebook on the broken kaon distribution, and it broke, as desired. Here are some plots of the likelihood distributions that I made with this new, fixed notebook.
+</p>
+
+<h3>Likelihoods: L_pi - L_K</h3>
+<img src="resources/20190812/deltaL_mc_w_p.png" alt="">
+<br>
+<img src="resources/20190812/deltaL_mc_no_p.png" alt="">
+<br>
+<img src="resources/20190812/deltaL_ana.png" alt="">
+<br>
+<h3>Expected number of photons: N_pi - N_K</h3>
+<img src="resources/20190812/deltaNh_mc.png" alt="">
+<br>
+<img src="resources/20190812/deltaNh_ana.png" alt="">
+<br>
+<h3>Distribution of L_pi - L_K</h3>
+<img src="resources/20190812/likelihood_separations.png" alt="">
+<br>
+
+</body>
+</html>

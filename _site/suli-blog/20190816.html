@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Aug 16 - Friday</title>
+</head>
+<body>
+
+<a href="index.html">Index of blog posts</a>
+
+<h1>Aug 16 - Friday</h1>
+
+<h2>Implementing TTS</h2>
+<p>
+  Transient time spread (TTS) is something which needed to be implemented. To implement it, we convolve the following waveform with each of the peaks in each channel PDF when calculating the probabilities:
+</p>
+<pre><code>
+&lt;TTS>
+  &lt;Gauss component="term-1">
+    &lt;fraction>0.5815&lt;/fraction>
+    &lt;mean unit="ps">-13.59&lt;/mean>
+    &lt;sigma unit="ps">31.97&lt;/sigma>
+  &lt;/Gauss>
+  &lt;Gauss component="term-2">
+    &lt;fraction>0.2870&lt;/fraction>
+    &lt;mean unit="ps">29.03&lt;/mean>
+    &lt;sigma unit="ps">53.39&lt;/sigma>
+  &lt;/Gauss>
+  &lt;Gauss component="term-3">
+    &lt;fraction>0.1315&lt;/fraction>
+    &lt;mean unit="ps">273.0&lt;/mean>
+    &lt;sigma unit="ps">340.2&lt;/sigma>
+  &lt;/Gauss>
+&lt;/TTS>
+</code></pre>
+<p>
+  I do the convolution analytically, as the convolution of two Gaussians is well-defined and much easier to implement than actually carrying out the operation on full waveforms. This convolution method is described in detail in both the notebook <code>notebooks/AnalyticLikelihoods.ipynb</code> and in the Overleaf project (in the file <code>reproducing.tex</code>).
+  <br>
+  With the convolution implemented, I made a few plots showing its effects on the likelihood distributions.
+</p>
+
+<img src="resources/20190816/30peaks_pdf0_ch107_tts.png" alt="">
+<img src="resources/20190816/30peaks_pdf0_fulldist_tts_comp.png" alt="">
+
+<p>
+  These plots are for a distribution which looks like this without the TTS:
+</p>
+
+<img src="resources/20190816/30peaks_pdf0_ch107.png" alt="">
+<img src="resources/20190816/30peaks_pdf0_fulldist.png" alt="">
+
+<p>
+  Thus, it appears that the TTS has been implemented correctly. Its effects are definitely present, and not too substantial, as we would hope.
+</p>
+
+<h2>Number of peaks to write</h2>
+<p>
+  As we found yesterday, it appears that we need to put a little more work into finding the correct number of peaks to write out. I did some research into a JaggedArray class from the Awkward Arrays packaged (<code>awkward</code>), and implemented it to write out all of the peaks for every channel PDF. Then, I added the cut on number of peaks in my analysis notebook to analyze how writing out different numbers of peaks changes the distribution. For one module PDF, here are plots of the full distribution for various cuts on the number of peaks (where we take the largest <i>n</i> peaks by their area).
+</p>
+
+<img src="resources/20190816/dist_3peaks.png" alt="">
+<img src="resources/20190816/dist_10peaks.png" alt="">
+<img src="resources/20190816/dist_30peaks.png" alt="">
+<img src="resources/20190816/dist_allpeaks.png" alt="">
+
+<p>
+  These are for a module with a number-of-peaks distribution as follows:
+</p>
+
+<img src="resources/20190816/dist_npeaks.png" alt="">
+
+</body>
+</html>

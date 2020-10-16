@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    padding: 100px 50px;
+}
+
+r-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content {
+    // padding-top: 120px;
+
+    h1 {
+        font-size: 72px;
+        line-height: 1em;
+        margin-top:    0px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 400;
+    }
+
+    p, li {
+        font-size: 20px;
+        // margin: 0;
+        line-height: 1.2em;
+    }
+
+    a {
+        color: inherit;
+    }
+}
+

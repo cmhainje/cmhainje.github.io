@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Aug 14 - Wednesday</title>
+</head>
+<body>
+
+<a href="index.html">Index of blog posts</a>
+
+<h1>Aug 14 - Wednesday</h1>
+
+<h2>Time of first photon detection</h2>
+<p>
+  I remade the plot from yesterday of the earliest photon detection in each bin with more data. Here's the plot.
+</p>
+
+<img src="resources/20190814/first_photon_times.png" alt="">
+
+<p>
+  A bit cleaner, but we see a weird discontinuity just a little before <i>z</i> = 0, and the region between <i>z</i> = -50 and 0 is still quite rough.
+</p>
+
+<h2>Expected number of photons</h2>
+<p>
+  I began investigating how the number of digits we detect via Monte Carlo compares to the analytic model's expected number (as a function of incident position). Here's what I found:
+</p>
+
+<img src="resources/20190814/nphot_diff_pion.png" alt="">
+<img src="resources/20190814/nphot_diff_kaon.png" alt="">
+<img src="resources/20190814/nphot_diff_zhist.png" alt="">
+
+<p>
+  We see that for the majority of the bar, we are simulating too many photon detections, by usually five or less. This implies to me that the cuts we make on the digits we simulate are getting pretty close to approximating the analytic model's expected number of digits, but there is still some refinement that needs to be made. These plots are shown with a tolerance of 0.02 radians on the Cherenkov angle cut, so our first plan is to investigate what a tolerance of 0.01 radians will do to these plots. See that in tomorrow's blog post.
+</p>
+
+<h2>Extracting analytic PDFs</h2>
+<p>
+  I began working on building a framework for extracting the analytic PDFs from BASF2. In my notebook <code>AnalyticLikelihoods.ipynb</code>, I built a PDF class that easily maintains the PDF's information and provides some plotting methods. Here's what some of the analytic PDFs look like.
+</p>
+
+<img src="resources/20190814/pdf0_full_dist.png" alt="">
+<img src="resources/20190814/pdf8_full_dist.png" alt="">
+
+<p>
+  From the second image, it looks like perhaps we are cutting off the "zig zag" shapes a bit. As such, we are going to look into writing out more peaks from the analytic PDFs. See tomorrow's post for that.
+</p>
+<p>
+  Another interesting thing. I decided to calculate the overall normalizations of the full module PDFs, and found them to be
+  <pre>
+    norm of pdf 0:  7.47
+    norm of pdf 1:  6.78
+    norm of pdf 2:  5.60
+    norm of pdf 3:  0.94
+    norm of pdf 4:  0.88
+    norm of pdf 5:  8.04
+    norm of pdf 6: 10.08
+    norm of pdf 7:  8.58
+    norm of pdf 8: 23.89
+    norm of pdf 9:  6.17
+  </pre>
+  We expect them to be at least 20 in most cases, though, so something is wrong with our translation of the mean, width, and area to Gaussian shapes. In some other parts of the code, the value <code>width</code> is used as though it is actually representing the width squared. Thus, I added a line <code>width = np.sqrt(width)</code> and recalculated the norms, and it appears to have helped.
+  <pre>
+    norm of pdf 0: 10.86
+    norm of pdf 1:  6.78
+    norm of pdf 2: 14.70
+    norm of pdf 3: 18.91
+    norm of pdf 4: 13.61
+    norm of pdf 5: 11.96
+    norm of pdf 6: 10.08
+    norm of pdf 7:  8.62
+    norm of pdf 8: 23.89
+    norm of pdf 9: 16.37
+  </pre>
+  Most of these are more in line with our expectations, now. As such, I'm going to default to taking the square root of the peak's width from now on.
+</p>
+
+
+</body>
+</html>

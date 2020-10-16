@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Belle II, Round II</title>
+    <link rel="stylesheet" href="/assets/css/raster-unminified.css">
+    <link rel="stylesheet" href="/assets/css/post.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+
+  <body>
+
+  <r-grid columns="6">
+    <r-cell span-s=row><nav>
+  <ul>
+    <li class="brand">connor<br>hainje</li>
+     
+      <li>
+        
+        <a href="/" class="current"><p>home</p></a>
+        
+      </li>
+     
+      <li>
+        
+        <a href="/about" class="current"><p>about</p></a>
+        
+      </li>
+     
+      <li>
+        
+        <a href="/projects" class="current"><p>projects</p></a>
+        
+      </li>
+     
+      <li>
+        
+        <a href="/research" class="current"><p>research*</p></a>
+        
+      </li>
+     
+      <li>
+        
+        <a href="/notes" class="current"><p>notes</p></a>
+        
+      </li>
+    
+  </ul>
+</nav>
+</r-cell>
+    <r-cell span=4 span-s=row>
+      <div class="content">
+        <h1>Belle II, Round II</h1>
+        <p><i>Summer 2020</i></p>
+        <p>For the second summer in a row, I’m working with Jan Strube at PNNL on the Belle
+II experiment. While I’m still working primarily on the TOP subdetector, my work
+is quite a bit more focused on how we can use machine learning to aid in our
+analysis.</p>
+
+<p>So far, most of my work has gone into understanding on a deeper level the
+particle identification (PID) system employed by the TOP. As Belle II continues
+to run and take data, it has become increasingly evident that there are somewhat
+strong discrepancies between simulation and data; namely, the data is not
+performing nearly as well as expected from simulation. Understanding why this is
+the case is paramount to increasing the quality of data recorded at Belle II.</p>
+
+<p>The TOP detector works as particle passing through emit photons (called
+Cherenkov radiation) which are internally reflected through the detector until
+they are absorbed and recorded by an array of photomultipliers (PMTs). This set
+of photon detections (each of which consists of a time and PMT channel) are
+theoretically sufficient to identify the passing particles, especially when
+combined with track information that can be obtained from the particle’s
+reconstructed track (information like momentum). My goal for the first part of
+this internship has been to develop methods for understanding each photon’s
+contribution to the TOP likelihoods for PID. This has been largely performed by
+creating additional C++ and Fortran methods in the Belle II analysis software
+framework, as well as by creating a new C++ data object type that can be used by
+Python analysis scripts.</p>
+
+<p>With this work in place, it is now possible to retrieve the likelihoods on a
+pixel-by-pixel basis. This allows us to understand whether patterns exist in the
+contributions of photons to the likelihoods (for instance, whether early photons
+are more important than late ones, or whether certain PMT channels matter more
+or less). This is currently a bit of a work-in-progress, so we shall see if any
+interesting results come about.</p>
+
+<p>The other primary part of my work is machine learning. In particular, I’m
+working on machine learning for particle identification: developing a model
+which, given a particle’s associated photon detections and track parameters,
+classifies the particle type. This is an interesting problem because the form of
+the data does not quite match that of pre-existing models. Further, it is rather
+easy to show that a problem like this is solvable for a given set of track
+parameters, but varying track parameters over the whole of their phase space
+(which is rather large) poses the challenge of scalability. Again, this is a bit
+of a work-in-progress, so check back later for potential updates.</p>
+
+      </div>
+    </r-cell>
+  </r-grid>
+
+  </body>
+</html>

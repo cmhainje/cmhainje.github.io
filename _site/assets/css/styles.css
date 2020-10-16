@@ -1,0 +1,16 @@
+body { margin: 0; font-family: Inter, sans-serif; padding: 100px 50px; }
+
+r-grid { max-width: 1000px; margin: 0 auto; }
+
+.content h1 { font-size: 72px; line-height: 1em; margin-top: 0px; margin-bottom: 20px; }
+.content h2 { font-size: 36px; font-weight: 400; }
+.content p, .content li { font-size: 20px; line-height: 1.2em; }
+.content a { color: inherit; }
+
+.brand { font-weight: 700; margin-bottom: 1em; }
+
+nav { padding-bottom: 50px; }
+nav ul { margin: 0; padding: 0; }
+nav ul li { list-style-type: none; font-size: 20px; }
+nav a { text-decoration: none; color: inherit; }
+nav p { margin: 0; }

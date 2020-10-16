@@ -1,0 +1,18 @@
+<nav>
+  <ul>
+    <li class="brand">connor<br>hainje</li>
+    {% for item in site.data.navigation %} 
+      <li>
+        {% if item.name == "home" and page.url == item.link %}
+        <a href="{{ item.link }}" class="current"><p>{{ item.name }}*</p></a>
+        {% elsif item.name == "about" and page.url == item.link %}
+        <a href="{{ item.link }}" class="current"><p>{{ item.name }}*</p></a>
+        {% elsif item.name != "home" and item.name != "about" and page.url contains item.link %}
+        <a href="{{ item.link }}" class="current"><p>{{ item.name }}*</p></a>
+        {% else %}
+        <a href="{{ item.link }}" class="current"><p>{{ item.name }}</p></a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
