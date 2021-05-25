@@ -5,6 +5,7 @@
     <title>Projects</title>
     <link rel="stylesheet" href="/assets/css/raster-unminified.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/projects.css">
   </head>
   <body>
 
@@ -47,16 +48,70 @@
 </nav>
 </r-cell>
     <r-cell span=4 span-s=row>
-      <div class="content"><h1 id="projects">Projects</h1>
+      <div class="content"><h1>Projects</h1>
 
-<p><a href="https://x-word.herokuapp.com">Xword</a>
-(<a href="/projects/xword/about"><i>about</i></a>)</p>
+<r-grid columns="4">
 
-<p><a href="https://github.com/cmhainje/bangnotes">BangNotes</a>
-(<a href="/projects/bangnotes/about"><i>about</i></a>)</p>
 
-<p><a href="/pomodoro/index.html">Pomodoro</a>
-(<a href="/projects/pomodoro/about"><i>about</i></a>)</p>
+
+<r-cell span="3" class="proj">
+  <div class="container">
+    <h3><b><a class="proj-link" href="https://x-word.herokuapp.com">
+      <span class="padding-lr">Xword</span>
+    </a></b></h3>
+    <p class="padding-lr">
+    A collaborative crossword playing app, built with React and Socket.IO. <a class="bloglink" href="/projects/xword/about">Read more here.</a>
+    </p>
+  </div>
+</r-cell>
+
+<r-cell class="proj-about">
+<a href="https://x-word.herokuapp.com">
+<p>R</p>
+</a>
+</r-cell>
+
+
+
+<r-cell span="3" class="proj">
+  <div class="container">
+    <h3><b><a class="proj-link" href="https://github.com/cmhainje/bangnotes">
+      <span class="padding-lr">BangNotes</span>
+    </a></b></h3>
+    <p class="padding-lr">
+    A custom Markdown-to-HTML compiler that allows the definition and use of custom, reusable HTML blocks. <a class="bloglink" href="/projects/bangnotes/about">Read more here.</a>
+    </p>
+  </div>
+</r-cell>
+
+<r-cell class="proj-about">
+<a href="https://github.com/cmhainje/bangnotes">
+<p>R</p>
+</a>
+</r-cell>
+
+
+
+<r-cell span="3" class="proj">
+  <div class="container">
+    <h3><b><a class="proj-link" href="/pomodoro/index.html">
+      <span class="padding-lr">Pomodoro</span>
+    </a></b></h3>
+    <p class="padding-lr">
+    A simple timer specialized for use with the Pomodoro productivity technique. <a class="bloglink" href="/projects/pomodoro/about">Read more here.</a>
+    </p>
+  </div>
+</r-cell>
+
+<r-cell class="proj-about">
+<a href="/pomodoro/index.html">
+<p>R</p>
+</a>
+</r-cell>
+
+
+
+</r-grid>
 
 </div>
     </r-cell>

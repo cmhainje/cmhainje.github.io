@@ -1,0 +1,33 @@
+---
+layout: project-page
+title: Projects
+permalink: /projects
+---
+
+<h1>Projects</h1>
+
+<r-grid columns="4">
+
+{% for item in site.data.projects %}
+
+<r-cell span="3" class="proj">
+  <div class="container">
+    <h3><b><a class="proj-link" href="{{ item.link }}">
+      <span class="padding-lr">{{ item.name }}</span>
+    </a></b></h3>
+    <p class="padding-lr">
+    {{ item.description }} <a class="bloglink" href="{{ item.bloglink }}">Read more here.</a>
+    </p>
+  </div>
+</r-cell>
+
+<r-cell class="proj-about">
+<a href="{{ item.link }}">
+<p>R</p>
+</a>
+</r-cell>
+
+{% endfor %}
+
+</r-grid>
+
