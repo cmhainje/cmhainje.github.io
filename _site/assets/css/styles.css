@@ -1,16 +1,43 @@
-body { margin: 0; font-family: Inter, sans-serif; padding: 100px 50px; }
+body { margin: 0; padding: 50px 0px; }
 
-r-grid { max-width: 1000px; margin: 0 auto; }
+r-grid { max-width: 1000px; margin: auto; }
 
-.content h1 { font-size: 72px; line-height: 1em; margin-top: 0px; margin-bottom: 20px; }
-.content h2 { font-size: 36px; font-weight: 400; }
-.content p, .content li { font-size: 20px; line-height: 1.2em; }
-.content a { color: inherit; }
+r-cell { padding: 0px 20px; }
 
-.brand { font-weight: 700; margin-bottom: 1em; }
+.content { max-width: 600px; margin: auto; }
 
-nav { padding-bottom: 50px; }
+h1 { letter-spacing: -0.02em; margin-bottom: 0.8em; }
+
+p, li { font-size: 16px; line-height: 1.5em; color: #444; }
+
+p { margin-bottom: 10px; }
+
+.list-post { display: flex; flex-direction: row; justify-content: space-between; }
+
+.list-post p { margin-bottom: 0.5em; }
+
+p.post-date, p.post-author { font-size: 12px; color: #777; }
+
+p.post-date { margin-bottom: 4px; }
+
+h1.post-title { margin-top: 0; margin-bottom: 4px; }
+
+p.post-author { margin-bottom: 20px; }
+
+pre.highlight { margin-bottom: 10px; }
+
+.brand { font-weight: 600; margin-bottom: 1em; }
+
+.brand p { font-size: 20px; }
+
+nav { padding-bottom: 20px; }
+
 nav ul { margin: 0; padding: 0; }
-nav ul li { list-style-type: none; font-size: 20px; }
+
+nav ul li { list-style-type: none; }
+
 nav a { text-decoration: none; color: inherit; }
-nav p { margin: 0; }
+
+nav p { margin: 0; line-height: 1.0em; }
+
+/*# sourceMappingURL=styles.css.map */

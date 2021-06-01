@@ -1,20 +1,30 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/raster-unminified.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }} | chainje.me</title>
+        <link rel="stylesheet" href="/assets/css/raster2.css">
+        <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <r-grid columns="6">
-    <r-cell span-s=row>{% include navigation.html %}</r-cell>
-    <r-cell span=4 span-s=row>
-      <div class="content">{{ content }}</div>
-    </r-cell>
-  </r-grid>
+        {% if page.code == true %}
+        {% include code.html %}
+        {% endif %}
 
-  </body>
+        {% if page.math == true %}
+        {% include math.html %}
+        {% endif %}
+    </head>
+
+    <body>
+        <!-- fixes flash of unstyled content -->
+        <script>0</script> 
+
+        <r-grid columns="6">
+            <r-cell span-s=row>{% include nav.html %}</r-cell>
+            <r-cell span=4 span-s=row>
+                {{ content }}
+            </r-cell>
+        </r-grid>
+    </body>
 </html>

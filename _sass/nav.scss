@@ -1,14 +1,14 @@
-.current { 
-  // font-weight: 700; 
-}
+.brand {
+    font-weight: 600;
+    margin-bottom: 1em;
 
-.brand { 
-  font-weight: 700; 
-  margin-bottom: 1em;
+    p {
+        font-size: 20px;
+    }
 }
 
 nav {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 
     ul {
         margin: 0;
@@ -16,14 +16,16 @@ nav {
 
         li {
             list-style-type: none;
-            font-size: 20px;
         }
     }
-    
+
     a {
         text-decoration: none;
         color: inherit;
     }
 
-    p { margin: 0; }
+    p {
+        margin: 0;
+        line-height: 1.0em;
+    }
 }

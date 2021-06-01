@@ -1,27 +1,11 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/raster-unminified.css">
-    <link rel="stylesheet" href="/assets/css/post.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  </head>
+---
+layout: default
+---
 
-  <body>
-
-  <r-grid columns="6">
-    <r-cell span-s=row>{% include navigation.html %}</r-cell>
-    <r-cell span=4 span-s=row>
-      <div class="content">
-        <h1>{{ page.title }}</h1>
-        <p><i>{{ page.dateline }}</i></p>
-        {{ content }}
-      </div>
-    </r-cell>
-  </r-grid>
-
-  </body>
-</html>
+<div class="content">
+    <p class="post-date">{{ page.date | date: "%Y-%m-%d" | upcase }}</p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-author">CONNOR HAINJE</p>
+    <p><i>{{ page.dateline }}</i></p>
+    {{ content }}
+</div>

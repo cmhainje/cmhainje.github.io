@@ -1,0 +1,21 @@
+- name: Rover (COS 426 Final Project)
+  about: /projects/rover/about
+  link: https://cmhainje.github.io/rover426
+  date: 2021-05
+- name: SNNSS (PACM Project)
+  about: /projects/snnss/about
+  link: https://github.com/cmhainje/snnss
+  date: 2021-04
+- name: Xword
+  about: /projects/xword/about
+  link: https://x-word.herokuapp.com
+  livelink: https://github.com/cmhainje/xword
+  date: 2020-08
+- name: BangNotes
+  about: /projects/bangnotes/about
+  link: https://github.com/cmhainje/bangnotes
+  date: 2020-07
+- name: Pomodoro
+  about: /projects/pomodoro/about
+  link: https://github.com/cmhainje/pomodoro
+  date: 2019-07

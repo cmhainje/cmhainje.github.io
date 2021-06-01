@@ -1,37 +1,66 @@
 body {
     margin: 0;
-    font-family: Inter, sans-serif;
-    padding: 100px 50px;
+    padding: 50px 0px;
 }
 
 r-grid {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: auto;
+}
+
+r-cell {
+    padding: 0px 20px;
 }
 
 .content {
-    // padding-top: 120px;
+    max-width: 600px;
+    margin: auto;
+}
 
-    h1 {
-        font-size: 72px;
-        line-height: 1em;
-        margin-top:    0px;
-        margin-bottom: 20px;
-    }
+h1 {
+    letter-spacing: -0.02em;
+    margin-bottom: 0.8em;
+}
 
-    h2 {
-        font-size: 36px;
-        font-weight: 400;
-    }
+p, li {
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #444;
+}
 
-    p, li {
-        font-size: 20px;
-        // margin: 0;
-        line-height: 1.2em;
-    }
+p {
+    margin-bottom: 10px;
+}
 
-    a {
-        color: inherit;
+
+.list-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+        margin-bottom: 0.5em;
     }
 }
 
+p.post-date, p.post-author {
+    font-size: 12px;
+    color: #777;
+}
+
+p.post-date {
+    margin-bottom: 4px;
+}
+
+h1.post-title {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+p.post-author {
+    margin-bottom: 20px;
+}
+
+pre.highlight {
+    margin-bottom: 10px;
+}
