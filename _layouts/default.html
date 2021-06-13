@@ -14,6 +14,12 @@
         {% if page.math == true %}
         {% include math.html %}
         {% endif %}
+
+        <script>
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('dark', true);
+            }
+        </script>
     </head>
 
     <body>
