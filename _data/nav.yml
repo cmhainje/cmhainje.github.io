@@ -8,7 +8,7 @@
   link: /graphics
 - name: keyboards
   link: /keyboards
-- name: media
-  link: /media
+# - name: media
+#   link: /media
 - name: about
   link: /about
