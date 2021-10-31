@@ -4,8 +4,8 @@
   link: /projects
 - name: physics
   link: /physics
-- name: graphics
-  link: /graphics
+# - name: graphics
+#   link: /graphics
 # - name: keyboards
 #   link: /keyboards
 # - name: media
