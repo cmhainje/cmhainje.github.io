@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Home
-permalink: /
+title: Blog
+permalink: /blog
 ---
 
 Hi, I'm Connor. Welcome to my blog.

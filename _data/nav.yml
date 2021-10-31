@@ -1,13 +1,13 @@
 - name: blog
-  link: /
+  link: /blog
 - name: projects
   link: /projects
 - name: physics
   link: /physics
 - name: graphics
   link: /graphics
-- name: keyboards
-  link: /keyboards
+# - name: keyboards
+#   link: /keyboards
 # - name: media
 #   link: /media
 - name: about

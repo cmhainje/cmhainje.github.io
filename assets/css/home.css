@@ -1,0 +1,75 @@
+:root {
+    --top-padding: 60px;
+    --bottom-padding: 100px;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #333;
+        color: #eee;
+    }
+}
+
+body {
+    font-family: 'Computer Modern Serif';
+    padding: var(--top-padding) min(70px, 10vw) var(--bottom-padding);
+    
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.author {
+    margin: 0;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.location {
+    margin: 0;
+    font-size: 16px;
+}
+
+main {
+    max-width: 700px;
+
+    margin-left: clamp(0px, calc(100vw - 840px), 150px);
+    margin-right: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+main p {
+    margin: 0;
+    font-size: 18px;
+    text-align: justify;
+}
+
+a {
+    color: inherit;
+}
+
+html, body {
+    min-height: calc(100vh - var(--top-padding) - var(--bottom-padding));
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    bottom: 50px;
+}
+
+footer p {
+    margin: 0;
+}
