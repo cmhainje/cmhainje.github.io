@@ -2,10 +2,6 @@
   about: /projects/rover/about
   link: https://cmhainje.github.io/rover426
   date: 2021-05
-- name: SNNSS (PACM Project)
-  about: /projects/snnss/about
-  link: https://github.com/cmhainje/snnss
-  date: 2021-04
 - name: Xword
   about: /projects/xword/about
   link: https://x-word.herokuapp.com

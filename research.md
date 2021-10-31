@@ -1,18 +1,17 @@
 ---
 layout: default
-title: Physics
+title: Research
 ---
 
-# Physics
+# Research
 
 I like to consider myself a physicist. It's what I do as a job right now, it's
 what I have a degree in, and it's what I see myself continuing to pursue for the
-rest of my life. Here, then, I'll detail the various physics projects I've
-worked on, any physics-related notes or documents that I make, and really
-anything else physics-related that I want to share. Cheers.
+rest of my life. Here, then, I'll detail the various physics and research
+projects I've worked on. Cheers.
 
 {% for category in site.categories %}
-{% if category[0] == 'physics' %}
+{% if category[0] == 'research' %}
 {% for post in category[1] %}
 <div class="list-post">
     <div class="list-title">
