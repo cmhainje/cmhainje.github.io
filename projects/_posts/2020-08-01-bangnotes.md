@@ -4,6 +4,7 @@ title: BangNotes
 dateline: July 2020
 permalink: /projects/bangnotes/about
 code: true
+description: an attempt at a markup templater
 ---
 
 See the code on [GitHub][github-repo].

@@ -1,8 +1,8 @@
-- name: blog
-  link: /blog
 - name: projects
   link: /projects
-- name: research
-  link: /research
+- name: thoughts
+  link: /thoughts
+- name: stuff
+  link: /stuff
 - name: about
   link: /about

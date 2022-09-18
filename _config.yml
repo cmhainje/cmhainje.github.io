@@ -3,3 +3,9 @@ highlighter: rouge
 
 kramdown:
   syntax_highlighter: rouge
+
+plugins:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from

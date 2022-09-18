@@ -4,18 +4,13 @@ title: Projects
 permalink: /projects
 ---
 
-# Projects
+## Projects
 
-{% for item in site.data.proj %}
-<div class="list-post">
-    <div class="list-title">
-        <p>
-            <a href="{{ item.link }}">{{ item.name }}</a>
-            (<a href="{{ item.about }}">about</a>)
-        </p>
-    </div>
-    <div class="list-date">
-        <p>{{ item.date | date: "%Y-%m" }}</p>
-    </div>
-</div>
+{% for category in site.categories %}
+{% if category[0] == 'projects' %}
+{% for post in category[1] %}
+[{{ post.title }}]({{ post.url }})
+{% if post.description %} — {{ post.description }} {% endif %}
+{% endfor %}
+{% endif %}
 {% endfor %}

@@ -5,59 +5,118 @@ permalink: /
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Connor Hainje</title>
-  <link rel="stylesheet" type="text/css"
-  href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
-  <link rel="stylesheet" href="assets/css/home.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connor Hainje</title>
+    <link rel="stylesheet" href="/assets/css/home/raster.css">
+    <link rel="stylesheet" href="/assets/css/home/styles.css">
+
+    <!-- Made with https://www.figma.com/community/file/914233657397286062 -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/icon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/icon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/icon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/icon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/icon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/icon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/icon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/icon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/assets/icon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/assets/icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/assets/icon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/icon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/icon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/assets/icon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/assets/icon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/assets/icon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/assets/icon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/assets/icon/mstile-310x310.png" />
+
 </head>
 <body>
 
-  <header>
-    <h1 class="title">The Personal Website of Connor Hainje</h1>
-    <p class="author">Connor M. Hainje<sup>1&dagger;</sup></p>
-    <p class="location"><sup>1</sup>&thinsp;<i>New York, NY, 11201, U.S.A</i></p>
-  </header>
+    <r-grid columns="3">
+        <r-cell span-s="row" order="-3">
+            <h1 class="brand"><a href="/">
+                <img src="/assets/logo.svg" alt="Logo" class="logo">
+                Connor Hainje
+            </a></h1>
+        </r-cell>
+        <r-cell span-s="row" order="-3">
+            <p class="header">
+                <a href="/about">About</a> &ensp;
+                <a href="/projects">Projects</a> &ensp;
+                <a href="/thoughts">Thoughts</a> &ensp;
+                <a href="/stuff">Stuff</a>
+            </p>
+        </r-cell>
+        <r-cell span-s="row" order="-3">
+            <p class="header">Brooklyn, NY</p>
+        </r-cell>
 
-  <main>
-    <h2>ABSTRACT</h2>
-    <p>
-      Hi, I’m Connor! I am a physicist by trade, programmer by hobby. I
-      recently graduated from Princeton University and am currently working as
-      a post-Bachelors research associate at Pacific Northwest National
-      Laboratory. I am deeply interested in the intersection between cosmology
-      and particle physics, particularly in the realm of dark matter modeling
-      and simulations. I also love programming, machine learning, and data
-      visualization.
-    </p>
+        <r-cell span="1" span-s="1" order="-3" order-s="-1"></r-cell>
+        <r-cell span="2" span-s="row" order="-3">
+            <div class="large-bio">
+                <h1>Hi, I'm Connor</h1>
+                <h2>I'm a Ph.D. candidate at NYU studying particle phenomenology and cosmology</h2>
+                <h2>I'm also building Mill, an app for research</h2>
+            </div>
+        </r-cell>
 
-    <h2>KEYWORDS</h2>
-    <p>
-      Dark matter - 
-      Data visualization - 
-      Physical simulations - 
-      Machine learning - 
-      Python - 
-      Particle physics - 
-      Web development - 
-      Computer graphics - 
-      Tools for thought
-    </p>
+        <r-cell span-s="row" class="list" order-s="-2">
+            <h2><a href="/projects" class="no-underline">Projects</a></h2>
+            {% assign count = 0 %}
+            {% for category in site.categories %}
+            {% if category[0] == 'projects' %}
+            {% for post in category[1] %}
+                {% assign count = count | plus:1 %}
+                {% if count <= 5 %}
+                <p>
+                    <!-- <a class="font-L" href="{{ post.url }}">{{ post.title | downcase }}</a> -->
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    {% if post.description %} — {{ post.description }} {% endif %}
+                </p>
+                {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
 
-    <h2>CONTENTS</h2>
-    <p>
-      <a href="/about">About</a>&emsp;
-      <a href="/blog">Blog</a>&emsp;
-      <a href="/research">Research</a>&emsp;
-      <a href="/projects">Projects</a>
-    </p>
-  </main>
+            <p><a href="/projects" class="no-underline">See all {{ count }} projects →</a></p>
 
-  <footer>
-    <p><sup>&dagger;</sup>&thinsp;Email: <a href="mailto:cmhainje@gmail.com">cmhainje@gmail.com</a></p>
-  </footer>
+        </r-cell>
+        <r-cell span-s="row" class="list" order-s="-2">
+            <h2><a href="/thoughts" class="no-underline">Thoughts</a></h2>
+            {% assign count = 0 %}
+            {% for category in site.categories %}
+            {% if category[0] == 'thoughts' %}
+            {% for post in category[1] %}
+                {% assign count = count | plus:1 %}
+                {% if count <= 5 %}
+                <p>
+                    <!-- <a class="font-L" href="{{ post.url }}">{{ post.title | downcase }}</a> -->
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    {% if post.description %} — {{ post.description }} {% endif %}
+                </p>
+                {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+
+            <p><a href="/thoughts" class="no-underline">See all {{ count }} posts →</a></p>
+        </r-cell>
+
+        <r-cell span-s="row" order-s="-3" class="list">
+            <h2><a href="/stuff" class="no-underline">Stuff</a></h2>
+            <p>Reading <a href="#">The Elements of Typographic Style</a></p>
+            <p>Listening to <a href="#">King Gizzard & the Lizard Wizard</a></p>
+            <p>Last watched <a href="#">Chef</a></p>
+            <p><a href="/stuff" class="no-underline">See all my stuff →</a></p>
+        </r-cell>
+
+    </r-grid>
+
 
 </body>
 </html>
