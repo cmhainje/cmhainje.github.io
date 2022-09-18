@@ -73,6 +73,7 @@ h2 {
 }
 
 p {
+  line-height: 140%;
   margin-top: 0;
   margin-bottom: 0.75rem;
 }
@@ -82,7 +83,7 @@ div.content {
 }
 
 div.content > p {
-  line-height: 141%;
+  /* line-height: 141%; */
   margin-bottom: 1rem;
 }
 
