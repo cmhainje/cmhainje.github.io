@@ -123,7 +123,7 @@ img {
 /* 20px = 1.2em */
 
 .large-bio {
-  margin: calc(max(4rem, calc(50vh - 14rem))) 0;
+  margin: calc(min(max(2rem, calc(50vh - 16rem)), calc(30vw))) 0;
 }
 
 .large-bio > h1 {
