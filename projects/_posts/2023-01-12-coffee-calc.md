@@ -3,9 +3,12 @@ layout: post
 title: Coffee calculator
 permalink: /projects/coffee-calc/about
 description: a quick calculator for making pour-over coffee
+links:
+ - name: Use it here
+   url: https://connorhainje.com/coffee-calc
+ - name: See the code on GitHub
+   url: https://github.com/cmhainje/coffee-calc
 ---
-
-Use it [here](https://connorhainje.com/coffee-calc)! See the code on [GitHub](https://github.com/cmhainje/coffee-calc).
 
 I've been making my coffee using a [Chemex](https://www.chemexcoffeemaker.com/six-cup-classic-series-coffeemaker.html) for years now, but for all that time I've been buying pre-ground beans and just adding whatever amounts of beans and water seemed right. Playing with the number of tablespoons of grounds I added and how much water to add was really error-prone, but eventually I settled on a specific ratio: 5 Tbsp of grounds, then add water until the brewed coffee comes up to the button on the Chemex and the top is still full. This produced enough coffee for me and my partner and it tasted okay. But if I needed to change the amount of coffee I was making (like if I was brewing only *one* cup), then I was totally lost.
 

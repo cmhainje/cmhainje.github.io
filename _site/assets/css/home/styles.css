@@ -137,3 +137,32 @@ img {
   font-size: 2.25rem;
   font-weight: 400;
 }
+
+.post-date {
+  /* font-family: monospace; */
+  font-style: italic;
+}
+
+.post-links {
+  border-top: 1px solid var(--fg);
+  border-bottom: 1px solid var(--fg);
+  padding: 1rem 0rem;
+  margin-bottom: 1rem;
+}
+
+.post-links > h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.post-links > ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.post-links > ul > li {
+  margin-bottom: 0.25rem;
+}
