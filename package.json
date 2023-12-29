@@ -6,12 +6,15 @@
   "scripts": {
     "dev": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
+    "predeploy": "npm run build",
+    "deploy": "npx gh-pages -d _site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "gh-pages": "^6.1.1"
   }
 }
