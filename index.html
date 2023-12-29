@@ -1,126 +1,31 @@
----
-permalink: /
----
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connor Hainje</title>
-    <link rel="stylesheet" href="/assets/css/home/raster.css">
-    <link rel="stylesheet" href="/assets/css/home/styles.css">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="https://rsms.me/res/fonts/iaw.css">
-
-    <!-- Made with https://www.figma.com/community/file/914233657397286062 -->
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/icon/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/icon/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/icon/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/icon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/icon/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/icon/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/icon/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/icon/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="/assets/icon/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="/assets/icon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="/assets/icon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/assets/icon/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="/assets/icon/favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="&nbsp;"/>
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="/assets/icon/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="/assets/icon/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="/assets/icon/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="/assets/icon/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="/assets/icon/mstile-310x310.png" />
-
+  <title>Connor Hainje</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/styles/fonts.css" rel="stylesheet">
+  <link href="/styles/home.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- fixes flash of unstyled content -->
-    <script>0</script>
+  <main>
+    <h2>personal website</h2>
+    <h4>and</h4>
+    <h2>digital journal</h2>
+    <h4>of</h4>
+    <h1><a href="/about">connor hainje.</a></h1>
 
-    <r-grid columns="3">
-        <r-cell span-s="row" order="-3">
-            <h1 class="brand"><a href="/">
-                <img src="/assets/logo.svg" alt="Logo" class="logo">
-                Connor Hainje
-            </a></h1>
-        </r-cell>
-        <r-cell span-s="row" order="-3">
-            <p class="header">
-                <a href="/about">About</a> &ensp;
-                <a href="/projects">Projects</a> &ensp;
-                <a href="/thoughts">Thoughts</a> &ensp;
-                <a href="/stuff">Stuff</a>
-            </p>
-        </r-cell>
-        <r-cell span-s="row" order="-3">
-            <p class="header">Brooklyn, NY</p>
-        </r-cell>
+    <p>
+      <a href="/writings"><i>writings</i></a>,
+      <a href="#"><i>reviews</i></a>,
+      <a href="#"><i>soft-wares</i></a>,
+      <a href="#"><i>notes</i></a>.
+    </p>
 
-        <r-cell span="1" span-s="1" order="-3" order-s="-1"></r-cell>
-        <r-cell span="2" span-s="row" order="-3">
-            <div class="large-bio">
-                <h1>Hi, I'm Connor</h1>
-                <h2>I'm a Ph.D. candidate at NYU studying particle phenomenology and cosmology</h2>
-                <!-- <h2>I'm also building Mill, an app for research</h2> -->
-            </div>
-        </r-cell>
-
-        <r-cell span-s="row" class="list" order-s="-2">
-            <h2><a href="/projects" class="no-underline">Projects</a></h2>
-            {% assign count = 0 %}
-            {% for category in site.categories %}
-            {% if category[0] == 'projects' %}
-            {% for post in category[1] %}
-                {% assign count = count | plus:1 %}
-                {% if count <= 5 %}
-                <p>
-                    <!-- <a class="font-L" href="{{ post.url }}">{{ post.title | downcase }}</a> -->
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                    {% if post.description %} — {{ post.description }} {% endif %}
-                </p>
-                {% endif %}
-            {% endfor %}
-            {% endif %}
-            {% endfor %}
-
-            <p><a href="/projects" class="no-underline">See all {{ count }} projects →</a></p>
-
-        </r-cell>
-        <r-cell span-s="row" class="list" order-s="-2">
-            <h2><a href="/thoughts" class="no-underline">Thoughts</a></h2>
-            {% assign count = 0 %}
-            {% for category in site.categories %}
-            {% if category[0] == 'thoughts' %}
-            {% for post in category[1] %}
-                {% assign count = count | plus:1 %}
-                {% if count <= 5 %}
-                <p>
-                    <!-- <a class="font-L" href="{{ post.url }}">{{ post.title | downcase }}</a> -->
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                    {% if post.description %} — {{ post.description }} {% endif %}
-                </p>
-                {% endif %}
-            {% endfor %}
-            {% endif %}
-            {% endfor %}
-
-            <p><a href="/thoughts" class="no-underline">See all {{ count }} posts →</a></p>
-        </r-cell>
-
-        <r-cell span-s="row" order-s="-3" class="list">
-            <h2><a href="/stuff" class="no-underline">Stuff</a></h2>
-            <p>Reading <a href="#">The Elements of Typographic Style</a></p>
-            <p>Listening to <a href="#">King Gizzard & the Lizard Wizard</a></p>
-            <p>Last watched <a href="https://letterboxd.com/chainje/film/blade-runner-2049/">Blade Runner 2049</a></p>
-            <p><a href="/stuff" class="no-underline">See all my stuff →</a></p>
-        </r-cell>
-
-    </r-grid>
-
-
+    <h3>New York, 2024.</h3>
+  </main>
 </body>
+
 </html>
