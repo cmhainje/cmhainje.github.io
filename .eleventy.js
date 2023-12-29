@@ -52,6 +52,7 @@ function toMyDateString(date) {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("styles");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   eleventyConfig.addFilter("toISODateString", toISODateString);
   eleventyConfig.addFilter("toMyDateString", toMyDateString);
