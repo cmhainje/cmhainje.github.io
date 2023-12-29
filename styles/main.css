@@ -1,0 +1,191 @@
+:root {
+  font-family: "TT2020";
+}
+
+html {
+  height: 100%;
+  width: 100%;
+
+  scroll-timeline: --page-scroll block;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  5% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+header,
+.sidebar {
+  animation: fade auto linear;
+  animation-timeline: --page-scroll;
+}
+
+body {
+  height: calc(100% - 48px);
+  width: calc(100% - 48px);
+  padding: 0;
+  margin: 24px;
+}
+
+div.marginalia {
+  position: fixed;
+  height: inherit;
+  width: inherit;
+}
+
+header>h1 {
+  font-weight: normal;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+header>h1>a {
+  text-decoration: none;
+}
+
+header>h1>a:hover {
+  margin: -10px -6px -6px;
+  padding: 10px 6px 6px;
+  border-radius: 6px;
+}
+
+span.header-name {
+  font-size: 44px;
+}
+
+nav.sidebar>ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+nav.sidebar>ul>li {
+  list-style: none;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+nav.sidebar>h3 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: -4px;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+@media (min-width: 1050px) {
+  nav.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 120px);
+    width: fit-content;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: calc(calc(100vw - 648px) / 2) 1fr;
+    /* column-gap: 20px; */
+    height: inherit;
+  }
+}
+
+@media (max-width: 1049px) {
+
+  header>h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+    line-height: 100%;
+  }
+
+  header>h1>span.header-name {
+    font-size: 32px;
+  }
+
+  header {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  header>h1 {
+    max-width: 420px;
+  }
+
+  .grid {
+    display: block;
+    height: inherit;
+
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  nav.sidebar {
+    display: block;
+  }
+
+  nav.sidebar>ul>li {
+    /* display: inline-block; */
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  nav.sidebar>h3 {
+    /* visibility: hidden; */
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  nav.sidebar {
+    border-bottom: 1px solid black;
+  }
+
+  main {
+    margin: 0 auto;
+  }
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+  /* margin: 0 auto 0; */
+  padding-bottom: 40px;
+
+  font-family: ETBembo;
+}
+
+main {
+  font-size: 20px;
+  line-height: 170%;
+  margin-top: 24px;
+}
+
+main>h1 {
+  font-family: TT2020;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+main>time {
+  font-family: TT2020;
+  font-size: 17px;
+  text-transform: uppercase;
+}
