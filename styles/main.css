@@ -55,6 +55,7 @@ header>h1>a:hover {
 
 span.header-name {
   font-size: 44px;
+  line-height: 44px;
 }
 
 nav.sidebar>ul {
