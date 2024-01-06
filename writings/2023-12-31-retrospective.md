@@ -1,6 +1,6 @@
 ---
 title: 2023 Retrospective
-date: 2024-01-06
+date: 2023-12-31
 layout: article
 description: looking back on 2023
 ---
