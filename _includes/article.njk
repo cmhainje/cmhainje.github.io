@@ -3,6 +3,12 @@ layout: main.njk
 ---
 
 <h1>{{ title }}.</h1>
-<time datetime="{{ page.date | toISODateString }}">Published {{ page.date | toMyDateString }}.</time>
-
+<p class="time">
+  <time datetime="{{ page.date | toISODateString }}">Published {{ page.date | toMyDateString }}.</time>
+</p>
+{% if lastModified %}
+  <p class="time">
+    <time datetime="{{ lastModified | toISODateString }}">Last edited {{ lastModified | toMyDateString }}.</time>
+  </p>
+{% endif %}
 {{ content | safe }}

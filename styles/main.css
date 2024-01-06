@@ -185,8 +185,9 @@ main>h1 {
   font-weight: normal;
 }
 
-main>time {
+main>p.time {
   font-family: TT2020;
   font-size: 17px;
+  margin: 0;
   text-transform: uppercase;
 }
