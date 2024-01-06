@@ -23,12 +23,6 @@ html {
   }
 }
 
-header,
-.sidebar {
-  animation: fade auto linear;
-  animation-timeline: --page-scroll;
-}
-
 body {
   height: calc(100% - 48px);
   width: calc(100% - 48px);
@@ -107,6 +101,12 @@ a:hover {
     /* column-gap: 20px; */
     height: inherit;
   }
+
+  header,
+  .sidebar {
+    animation: fade auto linear;
+    animation-timeline: --page-scroll;
+  }
 }
 
 @media (max-width: 1049px) {
@@ -145,6 +145,7 @@ a:hover {
   nav.sidebar>ul>li {
     /* display: inline-block; */
     font-size: 20px;
+    line-height: 12px;
     margin-bottom: 12px;
   }
 
