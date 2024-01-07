@@ -5,6 +5,7 @@
 html {
   height: 100%;
   width: 100%;
+  background-color: rgb(254, 250, 235);
 
   scroll-timeline: --page-scroll block;
 }
@@ -28,6 +29,7 @@ body {
   width: calc(100% - 48px);
   padding: 0;
   margin: 24px;
+  background-color: rgb(254, 250, 235);
 }
 
 div.marginalia {
