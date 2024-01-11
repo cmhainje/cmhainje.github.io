@@ -60,4 +60,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("writings", (collectionApi) =>
     collectionApi.getFilteredByGlob("writings/*.md").reverse()
   );
+
+  eleventyConfig.addCollection("reviews", (collectionApi) =>
+    collectionApi.getFilteredByGlob("reviews/*.md").reverse()
+  );
 };
