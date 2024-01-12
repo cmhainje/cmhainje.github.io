@@ -1,6 +1,6 @@
 ---
 title: 2024, Year of the Garden
-date: 2024-01-14
+date: 2024-01-12
 layout: article
 description: looking forward to 2024
 ---
@@ -38,11 +38,13 @@ Here's some of the ways that I plan to put this in action in 2024.
 
 Following from the realization that a beautiful garden is not an overcrowded mess (*a.k.a.* I burned myself out in 2023), I'm choosing to do *less*. I'm going to take fewer classes, not be a TA while also taking classes, and try to wrap up research projects so that I can focus better on the ones that will carry forward to my dissertation (and onward).
 
-Similarly, I want to be *more decisive*. Doing less means not taking on as much stuff, but it *also* means learning how to decisively say *no*. This is of the utmost importance as I formally choose my advisor and research topic this spring, but also carries over to my day-to-day. I need to be more decisive about the simple things, too—what to each for lunch, whether to wash my laundry today, which book to read next, etc.—and I think the *source* of this decisiveness should be the realization that *any* choice is far better than no choice at all.
+Similarly, I want to be *more decisive*. Doing less means not taking on as much stuff, but it *also* means learning how to decisively say *no*. This is of the utmost importance as I formally choose my advisor and research topic this spring, but also carries over to my day-to-day. I need to be more decisive about the simple things, too—what to eat for lunch, whether to wash my laundry today, which book to read next, etc.—and I think the source of this decisiveness should be the realization that *any* choice is far better than no choice at all.
 
-I want to tend to the *body*. I feel like physical health is the foundation on top of which all the meaningful things in life are built, and my foundation has been feeling crumbly. In the garden metaphor, I suppose this would be the soil... or the water quality? Regardless, its importance to *everything else* I care about is obvious, and I've gone on too long without paying it its due.
+I also want to use this framework to help me prioritize taking care of myself: my body, mind, and spirit.
 
-I also want to tend to the *mind*. The mind, like the body, is an integral component to the entire garden. But where I think of the body as being a physical component of the garden, I think of the mind as being even more fundamental. Everything about the experience of life comes from the *mind*, so its health is like the health of the Sun for the garden: it's the utter bedrock of everything. To care for the mind, I have a few specific ideas.
+*Body*. I feel like physical health is the foundation on top of which all the meaningful things in life are built, and my foundation has been feeling crumbly. In the garden metaphor, I suppose this would be the soil... or the water quality? Regardless, its importance to *everything else* I care about is obvious, and I've gone on too long without paying it its due.
+
+*Mind*. The mind, like the body, is an integral component to the entire garden. But where I think of the body as being a physical component of the garden, I think of the mind as being even more fundamental. Everything about the experience of life comes from the *mind*, so its health is like the health of the Sun for the garden: it's the utter bedrock of everything. To care for the mind, I have a few specific ideas.
 
 - Less screen time. Scrolling on social media is the biggest weed in my garden: I don't intentionally choose it, it spreads *fast*, and its overgrowth chokes out the other things I care about. Not to mention that constantly reading about all that's wrong with the world doesn't usually help my emotional state.
 - Relatedly, my work on the computer is alienating at times. My mind is *not* a digital machine, and it craves real, physical interaction with the world. (Also, I'm sure screens help drive  my vision issues and headaches). Aside from just spending more time outside, I also want to explore ways to do more of my work *off* the computer and away from the screen.
@@ -50,18 +52,8 @@ I also want to tend to the *mind*. The mind, like the body, is an integral compo
 - Being more patient. Things take time; sometimes, more time than I expect or want. Accept that this is okay.
 - Wandering often. I've come to think of *wandering* as an incredibly important piece of my creativity, mental health, emotional regulation, and my life more generally. I'll probably write up my thoughts on this more completely some other time, but for now it suffices to say that I want to intentionally spend more time being *aimless*. Letting the mind, body, and spirit wander, by taking walks or sitting still with no goal other than to just *be*. Important to wandering is a lack of stimulus aside from your surroundings.
 
-Lastly, I want to tend to my *spirit* by finding what resonates with me. There's two main things going on here. First, following the realization that the garden is finite, I'm choosing *resonance* as the criterion to help me choose which things deserve to take up some of that finite space. In particular, I only want to keep the things which resonate with me most strongly: my relationship, friendships, the work I feel most connected to, etc. The second aspect, though, is the question of what resonates with me in the first place. *Why* do certain things resonate more than others? *What* generates this resonance? These questions are a bit more philosophical, and I think their pursuit will help me understand what gives my life meaning. In pursuit of answers to these questions, I want to explore more art and philosophy in 2024 to find out living well has meant to others, and to see if I can't find what keeps my clock ticking.
+*Spirit*. I want to do this primarily by more thoroughly investigating what resonates with me. There's two main things going on here. First, following the realization that the garden is finite, I'm choosing *resonance* as the criterion to help me choose which things deserve to take up some of that finite space. In particular, I only want to keep the things which resonate with me most strongly: my relationship, friendships, the work I feel most connected to, etc. The second aspect, though, is the question of what resonates with me in the first place. *Why* do certain things resonate more than others? *What* generates this resonance? These questions are a bit more philosophical, and I think their pursuit will help me understand what gives my life meaning. In pursuit of answers to these questions, I want to explore more art and philosophy in 2024 to find out living well has meant to others, and to see if it helps me find what keeps my clock ticking.
 
 So, that's my theme for 2024: the Year of the Garden. Here's hoping this metaphor helps me to live well this year.
-
-
-
-
-
-
-
-
-
-
 
 
