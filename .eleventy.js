@@ -57,8 +57,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("toISODateString", toISODateString);
   eleventyConfig.addFilter("toMyDateString", toMyDateString);
 
-  eleventyConfig.addCollection("writings", (collectionApi) =>
-    collectionApi.getFilteredByGlob("writings/*.md").reverse()
+  eleventyConfig.addCollection("thoughts", (collectionApi) =>
+    collectionApi.getFilteredByGlob("thoughts/*.md").reverse()
   );
 
   eleventyConfig.addCollection("reviews", (collectionApi) =>
