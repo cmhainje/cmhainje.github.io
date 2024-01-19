@@ -1,6 +1,7 @@
 :root {
-  font-family: "TT2020";
-  text-align: center;
+  font-family: "et-book";
+  --font-size: 18px;
+  --line-height: 22px;
 }
 
 html {
@@ -11,44 +12,57 @@ html {
 
 body {
   display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
   width: 100%;
   height: 100%;
   background-color: rgb(254, 250, 235);
   margin: 0;
-  justify-content: center;
-  align-items: center;
 }
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-weight: normal;
-  text-transform: uppercase;
-  margin: 30px 0;
+  font-style: italic;
 }
 
 h1 {
-  font-size: 44px;
+  font-size: calc(2 * var(--font-size));
+  line-height: calc(2 * var(--line-height));
+  margin-bottom: calc(2 * var(--line-height));
+  margin-top: 0;
+  text-align: center;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: var(--line-height);
+  line-height: var(--line-height);
+  margin: 0;
+  text-align: center;
 }
 
 h3 {
-  font-size: 28px;
-  margin-top: 80px;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  margin-top: var(--line-height);
+  margin-bottom: var(--line-height);
 }
 
-h4 {
-  font-size: 24px;
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+p, li {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 }
 
 p {
-  font-size: 20px;
-  /* font-style: italic; */
-  margin-top: 80px;
+  margin-top: var(--line-height);
+  margin-bottom: var(--line-height);
 }
 
 a {
@@ -62,6 +76,16 @@ a:hover {
   border-radius: 0.3rem;
 }
 
-h1>a {
-  text-decoration: none;
+main {
+  max-width: 600px;
+  margin: calc(2 * var(--line-height)) auto 0;
+  flex-grow: 1;
 }
+
+footer {
+  bottom: calc(2 * var(--line-height));
+  max-width: 600px;
+  margin: 0 auto calc(2 * var(--line-height));
+  text-align: center;
+}
+
