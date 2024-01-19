@@ -95,11 +95,28 @@ main {
   max-width: 600px;
 }
 
+div.title-block {
+  margin-bottom: var(--line-height);
+}
+
+div.title-block>h1,
+div.title-block>h2 {
+  margin: 0;
+  font-style: italic;
+}
+
 h1 {
   font-size: calc(2 * var(--font-size));
   line-height: calc(2 * var(--line-height));
   font-weight: normal;
   font-style: italic;
+  margin: 0 0 var(--line-height);
+}
+
+h2 {
+  font-size: calc(1.25 * var(--font-size));
+  line-height: calc(1.5 * var(--line-height));
+  font-weight: normal;
   margin: 0 0 var(--line-height);
 }
 
