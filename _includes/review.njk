@@ -1,0 +1,21 @@
+---
+layout: main.njk
+---
+
+<div class="title-block">
+  <h1>{{ title }}</h1>
+  {% if author %}
+    <h2>by {{ author }}</h2>
+  {% endif %}
+</div>
+
+<p class="time">
+  Rating: {{ rating }} / 5. <br>
+  <time datetime="{{ page.date | toISODateString }}">Reviewed {{ page.date | toMyDateString }}.</time>
+</p>
+{% if lastModified %}
+  <p class="time">
+    <time datetime="{{ lastModified | toISODateString }}">Last edited {{ lastModified | toMyDateString }}.</time>
+  </p>
+{% endif %}
+{{ content | safe }}
