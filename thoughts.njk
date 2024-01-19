@@ -4,10 +4,12 @@ layout: main.njk
 ---
 
 <h1>Thoughts</h1>
+<ul class="no-style">
 {%- for post in collections.thoughts -%}
-  <p>
+  <li>
     <a href="{{ post.url }}">{{ post.data.title }}</a>
     —
     <i>{{ post.data.description }}</i>
-  </p>
+  </li>
 {%- endfor -%}
+</ul>

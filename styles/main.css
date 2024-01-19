@@ -115,6 +115,12 @@ p {
 p.time {
   text-transform: capitalize;
   font-style: italic;
+  margin: 0;
+}
+
+ul.no-style {
+  list-style: none;
+  padding-left: 0;
 }
 
 footer {
