@@ -1,7 +1,7 @@
 :root {
   font-family: "et-book";
-  --font-size: 18px;
-  --line-height: 22px;
+  --font-size: 22px;
+  --line-height: 27px;
 }
 
 html {
@@ -83,7 +83,6 @@ main {
 }
 
 footer {
-  bottom: calc(2 * var(--line-height));
   max-width: 600px;
   margin: 0 auto calc(2 * var(--line-height));
   text-align: center;
