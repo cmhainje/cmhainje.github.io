@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,12 +26,9 @@
       what I find with the world.
     </p>
 
-    <h3>Status</h3>
-    <ul>
-      <li>listening to a lot of Bjork,</li>
-      <li>watching '50s Japanese cinema, and</li>
-      <li>just finished reading <a href="/reviews/2024-01-19-solaris"><i>Solaris</i> by Stanislaw Lem</a></li>
-    </ul>
+    <h3><a href="/statuses">Status</a></h3>
+    {%- set status = collections.statuses | mostRecent -%}
+    {{ status.content | safe }}
 
     <h3>Selected Contents</h3>
     <ul>
