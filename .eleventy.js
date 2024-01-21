@@ -56,12 +56,16 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("toISODateString", toISODateString);
   eleventyConfig.addFilter("toMyDateString", toMyDateString);
+  eleventyConfig.addFilter("mostRecent", (collection) => collection[0]);
 
-  eleventyConfig.addCollection("thoughts", (collectionApi) =>
-    collectionApi.getFilteredByGlob("thoughts/*.md").reverse()
-  );
+  // make collections from directories
+  for (let dirName of ["thoughts", "reviews", "statuses"]) {
+    eleventyConfig.addCollection(dirName, (cAPI) =>
+      cAPI.getFilteredByGlob(`${dirName}/*.md`).reverse()
+    );
+  }
 
-  eleventyConfig.addCollection("reviews", (collectionApi) =>
-    collectionApi.getFilteredByGlob("reviews/*.md").reverse()
-  );
+  return {
+    htmlTemplateEngine: "njk",
+  };
 };
