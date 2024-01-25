@@ -1,48 +1,54 @@
 ---
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>Connor Hainje</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/styles/fonts.css" rel="stylesheet" />
+    <link href="/styles/et-book.css" rel="stylesheet" />
+    <link href="/styles/home.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>Connor Hainje</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/styles/fonts.css" rel="stylesheet">
-  <link href="/styles/et-book.css" rel="stylesheet">
-  <link href="/styles/home.css" rel="stylesheet">
-</head>
+  <body>
+    <main>
+      <h2>the personal website of</h2>
+      <h1>Connor Hainje</h1>
 
-<body>
-  <main>
-    <h2>the personal website of</h2>
-    <h1>Connor Hainje</h1>
+      <h3>Abstract</h3>
+      <p>
+        I'm Connor, a PhD student at NYU studying machine learning methods for
+        cosmological simulations. I'm passionate about finding and exploring the
+        many intersections of physics, technology, and design, and sharing what
+        I find with the world.
+      </p>
 
-    <h3>Abstract</h3>
-    <p>
-      I'm Connor, a PhD student at NYU studying machine learning methods for
-      cosmological simulations. I'm passionate about finding and exploring
-      the many intersections of physics, technology, and design, and sharing
-      what I find with the world.
-    </p>
+      <h3><a href="/statuses">Status</a></h3>
+      {%- set status = collections.statuses | mostRecent -%} {{ status.content |
+      safe }}
 
-    <h3><a href="/statuses">Status</a></h3>
-    {%- set status = collections.statuses | mostRecent -%}
-    {{ status.content | safe }}
-
-    <h3>Selected Contents</h3>
-    <ul>
-      <li><a href="/about">about</a> me in more detail</li>
-      <li><a href="/thoughts">thoughts</a> on computers, philosophy, physics, life</li>
-      <li><a href="/reviews">reviews</a> of the books I read, films I watch, food I eat</li>
-      <li><a href="/notes">notes</a> on physics, machine learning, design, et cetera</li>
-      <li><a href="/index/">index</a> of all other pages</li>
-    </ul>
-
-  </main>
-  <footer>
-    <p>v4, 2024. Built in Brooklyn.</p>
-  </footer>
-</body>
-
+      <h3>Selected Contents</h3>
+      <ul>
+        <li><a href="/about">about</a> me in more detail</li>
+        <li>
+          <a href="/thoughts">thoughts</a> on computers, philosophy, physics,
+          life
+        </li>
+        <li>
+          <a href="/reviews">reviews</a> of the books I read, films I watch,
+          food I eat
+        </li>
+        <li>
+          <a href="/notes">notes</a> on physics, machine learning, design, et
+          cetera
+        </li>
+        <li><a href="/index/">index</a> of all other pages</li>
+      </ul>
+    </main>
+    <footer>
+      <p>v4, 2024. Built in Brooklyn.</p>
+    </footer>
+  </body>
 </html>
