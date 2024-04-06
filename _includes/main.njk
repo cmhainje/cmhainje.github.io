@@ -2,14 +2,48 @@
 layout: base.njk
 ---
 
-<div class="primary">
-  <header>
-    <h1><a href="/">CH</a></h1>
-  </header>
-  <main>
-    {{ content | safe }}
-  </main>
+<div class="grid-container">
+  <div class="nav-sidebar">
+    <a href="/">
+      <img src="/assets/logo.svg" alt="my logo (a circle with a horizontal line drawn through it)" class="logo">
+    </a>
+    <br>
+    <nav>
+      <ul>
+        <li>
+          <a href="/about">about</a>
+        </li>
+        <li>
+          <a href="/statuses">statuses</a>
+        </li>
+        <li>
+          <a href="/thoughts">thoughts</a>
+        </li>
+        <li>
+          <a href="/reviews">reviews</a>
+        </li>
+        <li>
+          <a href="/projects">projects</a>
+        </li>
+        <li>
+          <a href="/notes">notes</a>
+        </li>
+        <br>
+        <li>
+          <a href="/index/index">sitemap</a>
+        </li>
+        <li>
+          <a href="/colophon">colophon</a>
+        </li>
+      </ul>
+    </nav>
+    <br>
+    <p>made in Brooklyn</p>
+  </div>
+  <div class="content">
+    <main>
+      {{ content | safe }}
+    </main>
+  </div>
+  <div class="note-sidebar"></div>
 </div>
-<footer>
-<p>v4, 2024. Built in Brooklyn.</p>
-</footer>

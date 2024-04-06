@@ -3,52 +3,88 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Connor Hainje</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="/styles/fonts.css" rel="stylesheet" />
-    <link href="/styles/et-book.css" rel="stylesheet" />
-    <link href="/styles/home.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <main>
-      <h2>the personal website of</h2>
-      <h1>Connor Hainje</h1>
+<head>
+  <title>Connor Hainje</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/home.css">
 
-      <h3>Abstract</h3>
-      <p>
-        I'm Connor, a PhD student at NYU studying machine learning methods for
-        cosmological simulations. I'm passionate about finding and exploring the
-        many intersections of physics, technology, and design, and sharing what
-        I find with the world.
-      </p>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/assets/favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/assets/favicon/avicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/assets/favicon/avicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/assets/favicon/avicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/assets/favicon/avicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="/assets/favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="/assets/favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="/assets/favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="/assets/favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="/assets/favicon/mstile-310x310.png" />
+</head>
 
-      <h3><a href="/statuses">Status</a></h3>
-      {%- set status = collections.statuses | mostRecent -%} {{ status.content |
-      safe }}
+<body>
+  <div class="grid-container">
+    <div class="nav-sidebar">
+      <a href="/">
+        <img src="/assets/logo.svg" alt="my logo (a circle with a horizontal line drawn through it)" class="logo">
+      </a>
+      <br>
+      <nav>
+        <ul>
+          <li><a href="/about">about</a></li>
+          <li><a href="/statuses">statuses</a></li>
+          <li><a href="/thoughts">thoughts</a></li>
+          <li><a href="/reviews">reviews</a></li>
+          <li><a href="/projects">projects</a></li>
+          <li><a href="/notes">notes</a></li>
+          <br>
+          <li><a href="/index/index">sitemap</a></li>
+          <li><a href="/colophon">colophon</a></li>
+        </ul>
+      </nav>
+      <br>
+      <p>made in Brooklyn</p>
+    </div>
+    <div class="content">
+      <main>
+        <h1>Connor Hainje</h1>
 
-      <h3>Selected Contents</h3>
-      <ul>
-        <li><a href="/about">about</a> me in more detail</li>
-        <li>
-          <a href="/thoughts">thoughts</a> on computers, philosophy, physics,
-          life
-        </li>
-        <li>
-          <a href="/reviews">reviews</a> of the books I read, films I watch,
-          food I eat
-        </li>
-        <li>
-          <a href="/notes">notes</a> on physics, machine learning, design, et
-          cetera
-        </li>
-        <li><a href="/index/">index</a> of all other pages</li>
-      </ul>
-    </main>
-    <footer>
-      <p>v4, 2024. Built in Brooklyn.</p>
-    </footer>
-  </body>
+        <h2>Abstract</h2>
+        <p>I'm a PhD student at NYU and GRFP fellow studying machine learning methods for cosmological simulation. I'm
+          passionate about finding and exploring the many intersections of physics, technology, and design, and sharing
+          what I find with the world.</p>
+
+        <h2>Status</h2>
+        {%- set status = collections.statuses | mostRecent -%} {{ status.content |
+        safe }}
+
+        <h2>Cool things</h2>
+        <ul>
+          <li><a href="https://www.inthepathoftotality.org/">inthepathoftotality.org</a></li>
+        </ul>
+
+        <h2>Recents</h2>
+        <div class="list-with-times-container">
+          <div><a href="/reviews/2024-02-17-envisioning-information">Envisioning Information</a></div>
+          <time>2024-02-17</time>
+        </div>
+      </main>
+    </div>
+    <div class="note-sidebar"></div>
+  </div>
+</body>
+
 </html>
