@@ -13,6 +13,10 @@ body {
   box-sizing: border-box;
 }
 
+blockquote {
+  padding-left: 2em;
+}
+
 @supports (font-variation-settings: normal) {
   :root {
     font-family: InterVariable, sans-serif;
