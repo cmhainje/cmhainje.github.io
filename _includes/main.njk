@@ -3,67 +3,10 @@ layout: base.njk
 ---
 
 <div class="grid-container">
-  <div class="nav-sidebar">
-    <nav>
-      <div class="menu-wrapper">
-        <a href="/">
-          <img src="/assets/logo.svg" alt="my logo (a circle with a horizontal line drawn through it)" class="logo">
-        </a>
-        <div class="hamburger">
-          <span id="open-ham">&#9776;</span>
-          <span id="close-ham">&#x2715;</span>
-        </div>
-      </div>
-      <div id="nav-items">
-        <br>
-        <ul>
-          <li>
-            <a href="/about">about</a>
-          </li>
-          <li>
-            <a href="/statuses">statuses</a>
-          </li>
-          <li>
-            <a href="/thoughts">thoughts</a>
-          </li>
-          <li>
-            <a href="/reviews">reviews</a>
-          </li>
-          <li>
-            <a href="/projects">projects</a>
-          </li>
-          <li>
-            <a href="/notes">notes</a>
-          </li>
-          <br>
-          <li>
-            <a href="/index/index">sitemap</a>
-          </li>
-          <li>
-            <a href="/colophon">colophon</a>
-          </li>
-        </ul>
-        <br>
-        <p>made in Brooklyn</p>
-      </div>
-    </nav>
-  </div>
+  {% include "nav.njk" %}
   <div class="content">
     <main>
       {{ content | safe }}
     </main>
   </div>
-  <div class="note-sidebar"></div>
-  <script>
-    let openHam = document.querySelector("#open-ham");
-    let closeHam = document.querySelector("#close-ham");
-    let navItems = document.querySelector("#nav-items");
-    const hamburgerEvent = (navigation, close, open) => {
-      navItems.style.display = navigation;
-      closeHam.style.display = close;
-      openHam.style.display = open;
-    };
-    openHam.addEventListener("click", () => hamburgerEvent("block", "block", "none"));
-    closeHam.addEventListener("click", () => hamburgerEvent("none", "none", "block"));
-  </script>
 </div>

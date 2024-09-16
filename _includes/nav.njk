@@ -1,0 +1,40 @@
+<div id="nav-sidebar">
+  <nav>
+    <div class="menu-wrapper">
+      <a href="/">
+        <div class="brand">
+          <img src="/assets/logo.svg" class="logo"/>
+          <p>connor hainje</p>
+        </div>
+      </a>
+      <div class="hamburger">
+        <span id="open-ham">&#9776;</span>
+        <span id="close-ham">&#x2715;</span>
+      </div>
+    </div>
+    <div id="nav-items">
+      <br/>
+      <p>phd student and nsf graduate fellow studying physics + machine learning at new york university</p>
+      <br/>
+      <ul>
+        {% for route in ['about', 'research', 'projects', 'notes'] %}
+          <li>
+            <a class="{{ 'nav-active' if ('/' + route) in page.url }}" href="/{{ route }}">{{ route }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+  <script>
+    let openHam = document.querySelector("#open-ham");
+    let closeHam = document.querySelector("#close-ham");
+    let navItems = document.querySelector("#nav-items");
+    const hamburgerEvent = (navigation, close, open) => {
+      navItems.style.display = navigation;
+      closeHam.style.display = close;
+      openHam.style.display = open;
+    };
+    openHam.addEventListener("click", () => hamburgerEvent("block", "block", "none"));
+    closeHam.addEventListener("click", () => hamburgerEvent("none", "none", "block"));
+  </script>
+</div>

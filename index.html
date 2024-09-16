@@ -8,10 +8,7 @@
   <title>Connor Hainje</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preconnect" href="https://rsms.me/">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="stylesheet" href="/styles/main.css">
-  <link rel="stylesheet" href="/styles/home.css">
 
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicon/apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicon/apple-touch-icon-114x114.png" />
@@ -36,66 +33,17 @@
 </head>
 
 <body>
-  <div class="grid-container">
-    <div class="nav-sidebar">
-      <nav>
-        <div class="menu-wrapper">
-          <a href="/">
-            <img src="/assets/logo.svg" alt="my logo (a circle with a horizontal line drawn through it)" class="logo">
-          </a>
-          <div class="hamburger">
-            <span id="open-ham">&#9776;</span>
-            <span id="close-ham">&#x2715;</span>
-          </div>
-        </div>
-        <div id="nav-items">
-          <br>
-          <ul>
-            <li><a href="/about">about</a></li>
-            <li><a href="/statuses">statuses</a></li>
-            <li><a href="/thoughts">thoughts</a></li>
-            <li><a href="/reviews">reviews</a></li>
-            <li><a href="/projects">projects</a></li>
-            <li><a href="/notes">notes</a></li>
-            <br>
-            <li><a href="/index/index">sitemap</a></li>
-            <li><a href="/colophon">colophon</a></li>
-          </ul>
-          <br>
-          <p>made in Brooklyn</p>
-        </div>
-      </nav>
-    </div>
-    <div class="content">
-      <main>
-        <h1>Connor Hainje</h1>
-
-        <h2>Abstract</h2>
-        <p>I'm a PhD student at NYU and GRFP fellow studying machine learning methods for cosmological simulation. I'm
-          passionate about finding and exploring the many intersections of physics, technology, and design, and sharing
-          what I find with the world.</p>
-
-        <h2>Status</h2>
-        {%- set status = collections.statuses | mostRecent -%} {{ status.content |
-        safe }}
-
-        <h2>Cool things</h2>
-        <ul>
-          <li><a href="https://www.inthepathoftotality.org/">inthepathoftotality.org</a></li>
-        </ul>
-
-        <h2>Recents</h2>
-        <div class="list-with-times-container">
-          <div><a href="/thoughts/2024-04-06-logo">thoughts/A personal logo</a></div>
-          <time>2024-04-06</time>
-          <div><a href="/reviews/2024-02-17-envisioning-information">reviews/Envisioning Information</a></div>
-          <time>2024-02-17</time>
-        </div>
-      </main>
-    </div>
-    <div class="note-sidebar"></div>
+  <div class="initials">
+    <p>ch</p>
   </div>
 
+  <div class="grid-container">
+    {% include 'nav.njk' %}
+    <div class="content">
+      <main>
+      </main>
+    </div>
+  </div>
   <script>
     let openHam = document.querySelector("#open-ham");
     let closeHam = document.querySelector("#close-ham");

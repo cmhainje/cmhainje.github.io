@@ -1,14 +1,11 @@
 ---
-title: About
+title: about
 layout: main.njk
 ---
 
-# About
+# about
 
-My name is Connor Hainje. I’m a second-year physics PhD student at New York
-University, and I study machine learning methods for cosmology and cosmological
-simulation. I am originally from Indiana, and I completed my undergraduate
-studies in physics at Princeton University in 2021.
+I am a third-year PhD student in the Center for Cosmology and Particle Physics at NYU. I study dynamics, cosmology, and machine learning, with a particular focus on how these can be used as probes for dark matter. My primary advisor is [David Hogg](https://cosmo.nyu.edu/hogg/), though I regularly work with several others, including Glennys Farrar (NYU) and Mariangela Lisanti (Princeton). My research is funded by the National Science Foundation Graduate Research Fellowship.
 
 I am passionate about uncovering the secrets of our Universe and figuring out
 the best ways to use computers to help us in this pursuit. I believe that the
