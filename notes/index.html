@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes | Connor Hainje</title>
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <title>notes | Connor Hainje</title>
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicon/apple-touch-icon-57x57.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicon/apple-touch-icon-114x114.png"/>
@@ -31,59 +29,45 @@
   <body>
     
 <div class="grid-container">
-  <div class="nav-sidebar">
-    <nav>
-      <div class="menu-wrapper">
-        <a href="/">
-          <img src="/assets/logo.svg" alt="my logo (a circle with a horizontal line drawn through it)" class="logo">
-        </a>
-        <div class="hamburger">
-          <span id="open-ham">&#9776;</span>
-          <span id="close-ham">&#x2715;</span>
+  <div id="nav-sidebar">
+  <nav>
+    <div class="menu-wrapper">
+      <a href="/">
+        <div class="brand">
+          <img src="/assets/logo.svg" class="logo"/>
+          <p>connor hainje</p>
         </div>
+      </a>
+      <div class="hamburger">
+        <span id="open-ham">&#9776;</span>
+        <span id="close-ham">&#x2715;</span>
       </div>
-      <div id="nav-items">
-        <br>
-        <ul>
+    </div>
+    <div id="nav-items">
+      <br/>
+      <p>phd student and nsf graduate fellow studying physics + machine learning at new york university</p>
+      <br/>
+      <ul>
+        
           <li>
-            <a href="/about">about</a>
+            <a class="" href="/about">about</a>
           </li>
+        
           <li>
-            <a href="/statuses">statuses</a>
+            <a class="" href="/research">research</a>
           </li>
+        
           <li>
-            <a href="/thoughts">thoughts</a>
+            <a class="" href="/projects">projects</a>
           </li>
+        
           <li>
-            <a href="/reviews">reviews</a>
+            <a class="nav-active" href="/notes">notes</a>
           </li>
-          <li>
-            <a href="/projects">projects</a>
-          </li>
-          <li>
-            <a href="/notes">notes</a>
-          </li>
-          <br>
-          <li>
-            <a href="/index/index">sitemap</a>
-          </li>
-          <li>
-            <a href="/colophon">colophon</a>
-          </li>
-        </ul>
-        <br>
-        <p>made in Brooklyn</p>
-      </div>
-    </nav>
-  </div>
-  <div class="content">
-    <main>
-      
-<h1>Notes</h1>
-
-    </main>
-  </div>
-  <div class="note-sidebar"></div>
+        
+      </ul>
+    </div>
+  </nav>
   <script>
     let openHam = document.querySelector("#open-ham");
     let closeHam = document.querySelector("#close-ham");
@@ -96,6 +80,14 @@
     openHam.addEventListener("click", () => hamburgerEvent("block", "block", "none"));
     closeHam.addEventListener("click", () => hamburgerEvent("none", "none", "block"));
   </script>
+</div>
+  <div class="content">
+    <main>
+      
+<h1>notes</h1>
+<ul class="no-style"></ul>
+    </main>
+  </div>
 </div>
   </body>
 </html>

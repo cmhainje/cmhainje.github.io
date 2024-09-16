@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Connor Hainje</title>
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <title>about | Connor Hainje</title>
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicon/apple-touch-icon-57x57.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicon/apple-touch-icon-114x114.png"/>
@@ -31,68 +29,45 @@
   <body>
     
 <div class="grid-container">
-  <div class="nav-sidebar">
-    <nav>
-      <div class="menu-wrapper">
-        <a href="/">
-          <img src="/assets/logo.svg" alt="my logo (a circle with a horizontal line drawn through it)" class="logo">
-        </a>
-        <div class="hamburger">
-          <span id="open-ham">&#9776;</span>
-          <span id="close-ham">&#x2715;</span>
+  <div id="nav-sidebar">
+  <nav>
+    <div class="menu-wrapper">
+      <a href="/">
+        <div class="brand">
+          <img src="/assets/logo.svg" class="logo"/>
+          <p>connor hainje</p>
         </div>
+      </a>
+      <div class="hamburger">
+        <span id="open-ham">&#9776;</span>
+        <span id="close-ham">&#x2715;</span>
       </div>
-      <div id="nav-items">
-        <br>
-        <ul>
+    </div>
+    <div id="nav-items">
+      <br/>
+      <p>phd student and nsf graduate fellow studying physics + machine learning at new york university</p>
+      <br/>
+      <ul>
+        
           <li>
-            <a href="/about">about</a>
+            <a class="nav-active" href="/about">about</a>
           </li>
+        
           <li>
-            <a href="/statuses">statuses</a>
+            <a class="" href="/research">research</a>
           </li>
+        
           <li>
-            <a href="/thoughts">thoughts</a>
+            <a class="" href="/projects">projects</a>
           </li>
+        
           <li>
-            <a href="/reviews">reviews</a>
+            <a class="" href="/notes">notes</a>
           </li>
-          <li>
-            <a href="/projects">projects</a>
-          </li>
-          <li>
-            <a href="/notes">notes</a>
-          </li>
-          <br>
-          <li>
-            <a href="/index/index">sitemap</a>
-          </li>
-          <li>
-            <a href="/colophon">colophon</a>
-          </li>
-        </ul>
-        <br>
-        <p>made in Brooklyn</p>
-      </div>
-    </nav>
-  </div>
-  <div class="content">
-    <main>
-      <h1>About</h1>
-<p>My name is Connor Hainje. I’m a second-year physics PhD student at New York
-University, and I study machine learning methods for cosmology and cosmological
-simulation. I am originally from Indiana, and I completed my undergraduate
-studies in physics at Princeton University in 2021.</p>
-<p>I am passionate about uncovering the secrets of our Universe and figuring out
-the best ways to use computers to help us in this pursuit. I believe that the
-world’s knowledge is only meaningful so far as it is <em>shared</em>, so I care a lot
-about finding the best ways to present information and teach it to others. To
-this end, I find myself super interested in data visualization, typography,
-graphic design, and interactive explanations.</p>
-
-    </main>
-  </div>
-  <div class="note-sidebar"></div>
+        
+      </ul>
+    </div>
+  </nav>
   <script>
     let openHam = document.querySelector("#open-ham");
     let closeHam = document.querySelector("#close-ham");
@@ -105,6 +80,20 @@ graphic design, and interactive explanations.</p>
     openHam.addEventListener("click", () => hamburgerEvent("block", "block", "none"));
     closeHam.addEventListener("click", () => hamburgerEvent("none", "none", "block"));
   </script>
+</div>
+  <div class="content">
+    <main>
+      <h1>about</h1>
+<p>I am a third-year PhD student in the Center for Cosmology and Particle Physics at NYU. I study dynamics, cosmology, and machine learning, with a particular focus on how these can be used as probes for dark matter. My primary advisor is <a href="https://cosmo.nyu.edu/hogg/">David Hogg</a>, though I regularly work with several others, including Glennys Farrar (NYU) and Mariangela Lisanti (Princeton). My research is funded by the National Science Foundation Graduate Research Fellowship.</p>
+<p>I am passionate about uncovering the secrets of our Universe and figuring out
+the best ways to use computers to help us in this pursuit. I believe that the
+world’s knowledge is only meaningful so far as it is <em>shared</em>, so I care a lot
+about finding the best ways to present information and teach it to others. To
+this end, I find myself super interested in data visualization, typography,
+graphic design, and interactive explanations.</p>
+
+    </main>
+  </div>
 </div>
   </body>
 </html>
