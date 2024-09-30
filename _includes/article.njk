@@ -5,11 +5,11 @@ layout: main.njk
 <h1>{{ title }}</h1>
 
 <p class="time">
-  <time datetime="{{ page.date | toISODateString }}">Published {{ page.date | toMyDateString }}.</time>
+  <time datetime="{{ page.date | toISODateString }}">published {{ page.date | toISODateString }}</time>
 </p>
 {% if lastModified %}
   <p class="time">
-    <time datetime="{{ lastModified | toISODateString }}">Last edited {{ lastModified | toMyDateString }}.</time>
+    <time datetime="{{ lastModified | toISODateString }}">last edited {{ lastModified | toISODateString }}</time>
   </p>
 {% endif %}
 {{ content | safe }}
