@@ -187,9 +187,15 @@ ul.no-style {
     cursor: default;
     user-select: none;
     margin-right: max(-20px, -2cqmin);
+    text-wrap: pretty;
   }
 }
 
 div.content p {
   max-width: 500px;
+}
+
+p.time {
+  font-size: 13px;
+  font-style: italic;
 }
