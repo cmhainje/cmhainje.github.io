@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "bunx @11ty/eleventy --serve",
     "build": "rm -rf _site && bunx @11ty/eleventy",
+    "deploy": "bun run build && git subtree push --prefix _site origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
