@@ -4,10 +4,8 @@
   "description": "Connor's Personal Website",
   "main": "index.js",
   "scripts": {
-    "dev": "npx @11ty/eleventy --serve",
-    "build": "rm -rf _site && npx @11ty/eleventy",
-    "predeploy": "npm run build",
-    "deploy": "npx gh-pages -d _site",
+    "dev": "bunx @11ty/eleventy --serve",
+    "build": "rm -rf _site && bunx @11ty/eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -2,6 +2,7 @@
 layout: article
 title: chic
 description: personal plotting style package
+date: 2024-09-30
 ---
 
 [chic](https://github.com/cmhainje/chic) is my work-in-progress personal
