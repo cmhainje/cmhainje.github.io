@@ -17,7 +17,7 @@
       <p>phd student and nsf graduate fellow studying physics + machine learning at new york university</p>
       <br/>
       <ul>
-        {% for route in ['about', 'research', 'projects', 'notes'] %}
+        {% for route in ['about', 'research', 'projects', 'photos', 'notes'] %}
           <li>
             <a class="{{ 'nav-active' if ('/' + route) in page.url }}" href="/{{ route }}">{{ route }}</a>
           </li>

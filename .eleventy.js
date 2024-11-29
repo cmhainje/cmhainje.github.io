@@ -39,9 +39,9 @@ module.exports = function (eleventyConfig) {
   );
 
   // make collections from directories
-  for (let dirName of ["projects", "research", "notes"]) {
+  for (let dirName of ["projects", "research", "notes", "photos"]) {
     eleventyConfig.addCollection(dirName, (cAPI) =>
-      cAPI.getFilteredByGlob(`${dirName}/*.md`).reverse()
+      cAPI.getFilteredByGlob(`${dirName}/*.{md,html}`).reverse()
     );
   }
 
