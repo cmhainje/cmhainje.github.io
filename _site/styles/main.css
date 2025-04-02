@@ -196,6 +196,6 @@ div.content p {
 }
 
 p.time {
-  font-size: 13px;
+  /* font-size: 13px; */
   font-style: italic;
 }

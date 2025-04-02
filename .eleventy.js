@@ -41,7 +41,10 @@ module.exports = function (eleventyConfig) {
   // make collections from directories
   for (let dirName of ["projects", "research", "notes", "photos"]) {
     eleventyConfig.addCollection(dirName, (cAPI) =>
-      cAPI.getFilteredByGlob(`${dirName}/*.{md,html}`).reverse()
+      cAPI
+        .getFilteredByGlob(`${dirName}/*.{md,html}`)
+        .sort((a, b) => a.data.date - b.data.date)
+        .reverse()
     );
   }
 
