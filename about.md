@@ -5,7 +5,13 @@ layout: main.njk
 
 # about
 
-I am a third-year PhD student in the Center for Cosmology and Particle Physics at NYU. I study dynamics, cosmology, and machine learning, with a particular focus on how these can be used as probes for dark matter. My primary advisor is [David Hogg](https://cosmo.nyu.edu/hogg/), though I regularly work with several others, including Glennys Farrar (NYU) and Mariangela Lisanti (Princeton). My research is funded by the National Science Foundation Graduate Research Fellowship.
+I am a fourth-year PhD student in the Center for Cosmology and Particle Physics
+at NYU. I study dynamics, cosmology, and machine learning, with a particular
+focus on how these can be used as probes for dark matter. My primary advisor is
+[David W Hogg](https://cosmo.nyu.edu/hogg/), though I regularly work with
+several others, including Glennys Farrar (NYU) and Mariangela Lisanti
+(Princeton). My research is funded by the National Science Foundation Graduate
+Research Fellowship.
 
 I am passionate about uncovering the secrets of our Universe and figuring out
 the best ways to use computers to help us in this pursuit. I believe that the
